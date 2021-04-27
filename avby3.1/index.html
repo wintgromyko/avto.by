@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <header>
+    <div class="top-bar container d-flex flex-row justify-content-between align-items-center">
+      <div>
+         <img  src="img/logo.png">
+      </div>
+
+        <div class="d-flex flex-row">
+          <div class="d-flex flex-row mr-4">
+             <span class="city">Минск</span>
+             <img class="geo" src="img/Location.png">
+          </div>
+          <div class="d-flex flex-row">
+            <span class="set-color">Тёмная</span>
+            <label class="switch">
+              <input type="checkbox" >
+              <span class="slider round"></span>
+            </label>
+         </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid nav-menu p-0">
+<nav class="container navbar navbar-expand-lg p-0">
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 7H20" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          <path d="M4 17H16" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          </svg></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav d-flex justify-content-between w-100 p0">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="#">ВОПРОС-ОТВЕТ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">СТАТЬ АВТОДИЛЛЕРОМ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">КОНТАКТЫ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">О КОМПАНИИ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">+375 29 119 11 22</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+    </div>
+  </header>
+
+
+  <section class = 'buy container-fluid p-0 m-0'>
+    <div class="container-fluid filter p-0 m-0">
+    <div class="buy-content container">
+        <div class="title">
+          <h1>Купим<br>
+            Ваш автомобиль</h1>
+            <div class="bread-crumbs " >
+              <div id="one">
+                <svg class="circle"  width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="18" r="18" fill="#00AF68"/>
+              <text x="14" y="22" font-weight="900"; fill="#fff"  font-size="14" font-family="Source Sans Pro">1</text>
+              </svg>
+              <span>Выбор филиала</span>
+              <svg class="del" width="25" height="2" viewBox="0 0 25 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.8" width="25" height="2" rx="1" fill="#EDF1F2"/>
+                </svg>
+              </div>
+              <div id="two">
+                <svg class="circle" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="18" cy="18" r="18" fill="#fff"/>
+                  <text x="14" y="22" font-weight="900"; fill="#282828"  font-size="14" font-family="Source Sans Pro">2</text>
+                  </svg>
+                  <span>Контактные данные</span>
+                  <svg class="del" width="25" height="2" viewBox="0 0 25 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect opacity="0.8" width="25" height="2" rx="1" fill="#EDF1F2"/>
+                    </svg>
+              </div>
+              <div id="three">
+                <svg class="circle" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="18" cy="18" r="18" fill="#fff"/>
+                  <text x="14" y="22" font-weight="900"; fill="#282828"  font-size="14" font-family="Source Sans Pro">3</text>
+                  </svg>
+                  <span>Вы успешно записались</span>
+              </div>
+                
+            </div>
+            
+      </div>
+      <div class="form-buy">
+        <form action="#" method="POST">
+          <div class="form-1">
+            <select class="form-control" name = "car-brand" id="exampleFormControlSelect1">
+              <option value="" disabled selected>Марка авто</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <select class="form-control" name = "model" id="exampleFormControlSelect2">
+              <option value="" disabled selected>Модель</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <input type="number"  name="year" class="form-control" min="1900" max="2099" step="1" value="2016" placeholder="Год">
+            <!-- <select class="form-control" id="exampleFormControlSelect1">
+              <option value="" disabled selected>Год</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select> -->
+            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Телефон или Email">
+            <button id = 'btn-next' class="btn btn-success mb-2">Далее <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+              <path d="M15.2827 5L21.9998 12L15.2827 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="20.7329" y1="12.0317" x2="4.99985" y2="12.0317" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </g>
+              <defs>
+              <filter id="filter0_d" x="-3" y="0" width="32" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+              </filter>
+              </defs>
+              </svg></button>
+          </div>
+         <div class="form-2" style="display: none;">
+          <div class="back"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.47821 3.33331L2.00016 7.99998L6.47821 12.6666" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="1" y1="-1" x2="10.822" y2="-1" transform="matrix(1 0 0 -1 2.17804 7.35449)" stroke="#282828" stroke-width="2" stroke-linecap="round"/>
+            </svg><span>Назад</span></div>
+              <input type="text" class="form-control" id="inputAddress" name="region" placeholder="Выберите область">
+              <input type="text" class="form-control" id="inputCity" name="сity" placeholder="Выберите город">
+              <input type="text" class="form-control" id="inputAddress2" name="office" placeholder="Выберите офис">
+              <div class="data-time">
+                <input class="form-control" type="date" value="2011-08-19" id="example-date-input" placeholder="Дата">
+              <input class="form-control" type="time" value="13:45:00" id="example-time-input" placeholder="Время">
+              </div>
+              
+
+          <button id = 'btn-next-2' class="btn btn-success mb-2">Далее <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d)">
+            <path d="M15.2827 5L21.9998 12L15.2827 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="20.7329" y1="12.0317" x2="4.99985" y2="12.0317" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </g>
+            <defs>
+            <filter id="filter0_d" x="-3" y="0" width="32" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+            </filter>
+            </defs>
+            </svg></button>
+         </div>
+         <div class="form-3" style="display: none;">
+          <div class="back"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.47821 3.33331L2.00016 7.99998L6.47821 12.6666" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="1" y1="-1" x2="10.822" y2="-1" transform="matrix(1 0 0 -1 2.17804 7.35449)" stroke="#282828" stroke-width="2" stroke-linecap="round"/>
+            </svg><span>Назад</span></div>
+            <div class="full-name">
+              <input type="text" class="form-control" id="inputAddress" name="name" placeholder="Имя">
+              <input type="text" class="form-control" id="inputCity" name="surname" placeholder="Фамилия">
+            </div>
+          <input type="text" class="form-control" id="inputAddress2" name="emali2" placeholder="Ваша почта">
+          <input type="text" class="form-control" id="inputCity" name="tel" placeholder="Ваш телефон">
+
+      <button id = 'btn-next-3' class="btn btn-success mb-2">ЗАПИСАТЬСЯ <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d)">
+        <path d="M15.2827 5L21.9998 12L15.2827 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="20.7329" y1="12.0317" x2="4.99985" y2="12.0317" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </g>
+        <defs>
+        <filter id="filter0_d" x="-3" y="0" width="32" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+        </filter>
+        </defs>
+        </svg></button>
+     </div>
+        </form>
+        <div class="end-form" style="display: none;">
+          <div class="end-form-left">
+            <span class='end-form-title'>Поздравляем! Вы успешно записались
+              на продажу автомобиля</span>
+              <div style="height: 26px;"></div>
+              <p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="3" width="20" height="19" rx="3" stroke="#00AF68" stroke-width="2"/>
+                <path d="M7 1V3" stroke="#00AF68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17 1V3" stroke="#00AF68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 8H22" stroke="#00AF68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.5 13H7.5" stroke="#00AF68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.5 13H12.5" stroke="#00AF68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.5 13H17.5" stroke="#00AF68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.5 17H7.5" stroke="#00AF68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.5 17H12.5" stroke="#00AF68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.5 17H17.5" stroke="#00AF68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="data">13 февраля, суббота, 13:00</span>
+                </p>
+                <p><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 11C22 15.346 15.8077 20.9022 13.1687 23.0727C12.4838 23.636 11.5162 23.636 10.8313 23.0727C8.19234 20.9022 2 15.346 2 11C2 5.47715 6.47715 1 12 1C17.5228 1 22 5.47715 22 11Z" stroke="#00AF68" stroke-width="2"/>
+                  <circle cx="12" cy="11" r="3" stroke="#00AF68" stroke-width="2"/>
+                  </svg>
+                  <span class="office">Мытищи, Олимпийский пр-т, 38б </span>
+                   
+                </p>
+                <p>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.3341 9.08664L20.5393 3.10401C20.2515 2.14454 19.385 1.5 18.3838 1.5H5.61619C4.61496 1.5 3.74849 2.14454 3.46069 3.10401L1.66588 9.08664C0.709351 9.34572 0 10.2125 0 11.25V18C0 18.8269 0.67308 19.5 1.49998 19.5V20.25C1.49998 21.4907 2.50925 22.5 3.74998 22.5H5.24996C6.49069 22.5 7.49996 21.4907 7.49996 20.25V19.5H16.5V20.25C16.5 21.4907 17.5092 22.5 18.7499 22.5H20.2499C21.4907 22.5 22.4999 21.4907 22.4999 20.25V19.5C23.3268 19.5 23.9999 18.8269 23.9999 18V11.25C24 10.2125 23.2906 9.34572 22.3341 9.08664ZM4.89766 3.5347C4.99361 3.21462 5.2822 3.00003 5.61615 3.00003H18.3837C18.7177 3.00003 19.0063 3.21462 19.1022 3.5347L20.7418 9.00001H3.25799L4.89766 3.5347ZM5.99993 20.2501C5.99993 20.6639 5.66375 21.0001 5.24992 21.0001H3.74994C3.33611 21.0001 2.99992 20.6639 2.99992 20.2501V19.5001H5.99993V20.2501ZM20.9999 20.2501C20.9999 20.6639 20.6638 21.0001 20.2499 21.0001H18.7499C18.3361 21.0001 17.9999 20.6639 17.9999 20.2501V19.5001H20.9999V20.2501ZM1.49994 18.0001V11.2501C1.49994 10.8363 1.83613 10.5001 2.24995 10.5001H21.75C22.1638 10.5001 22.5 10.8363 22.5 11.2501V18.0001H1.49994Z" fill="#00AF68"/>
+                    <path d="M5.33789 12.3513C4.09716 12.3513 3.08789 13.3606 3.08789 14.6013C3.08789 15.842 4.09716 16.8513 5.33789 16.8513C6.57862 16.8513 7.58788 15.842 7.58788 14.6013C7.58788 13.3606 6.57862 12.3513 5.33789 12.3513ZM5.33789 15.3513C4.92406 15.3513 4.58787 15.0151 4.58787 14.6013C4.58787 14.1875 4.92406 13.8513 5.33789 13.8513C5.75171 13.8513 6.0879 14.1875 6.0879 14.6013C6.0879 15.0151 5.75171 15.3513 5.33789 15.3513Z" fill="#00AF68"/>
+                    <path d="M19.2332 12.3513C17.9924 12.3513 16.9832 13.3606 16.9832 14.6013C16.9832 15.842 17.9924 16.8513 19.2332 16.8513C20.4739 16.8513 21.4831 15.842 21.4831 14.6013C21.4831 13.3606 20.4739 12.3513 19.2332 12.3513ZM19.2332 15.3513C18.8193 15.3513 18.4831 15.0151 18.4831 14.6013C18.4831 14.1875 18.8193 13.8513 19.2332 13.8513C19.647 13.8513 19.9832 14.1875 19.9832 14.6013C19.9832 15.0151 19.647 15.3513 19.2332 15.3513Z" fill="#00AF68"/>
+                    </svg>
+                    <span class="car">BMW 1er II (F20/F21) Рестайлинг 2 [2017]</span>
+                </p>
+                <div style="height: 78px;"></div>
+                <span class="contacted">В ближайшее время Вам позвонит
+                  наш оператор для уточнения данных</span>
+          </div>
+          <div class="end-form-right">
+            <span class='end-form-title'>Юридическая проверка</span>
+            <p>30% клиентов, записавшихся на аукцион, не допускаются до торгов из-за наличия ограничений на авто.</p>
+            <button id = 'btn-next-4' class="btn btn-success mb-2">ПРОВЕРИТЬ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+    <!-- Покупать транспортные средства на аукционах легко -->
+   <!-- Юридическая проверка -->
+  <section class="container-fluid m-0">
+    
+  </section>
+  <section id="slider-wrapper" class="container-fluid m-0">
+    <div class="container col-6 form-check">
+      <div class="form-check-title">
+        <h3>Юридическая проверка</h3>
+        <p>Данная проверка поможет Вам убедиться в том, что транспортное средство<br>
+          подлежит продаже и на него не наложено никаких ограничений.</p>
+      </div>
+      <form action="" method="post">
+        <div class="form-check-auto">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.3341 9.08664L20.5393 3.10401C20.2515 2.14454 19.385 1.5 18.3838 1.5H5.61619C4.61496 1.5 3.74849 2.14454 3.46069 3.10401L1.66588 9.08664C0.709351 9.34572 0 10.2125 0 11.25V18C0 18.8269 0.67308 19.5 1.49998 19.5V20.25C1.49998 21.4907 2.50925 22.5 3.74998 22.5H5.24996C6.49069 22.5 7.49996 21.4907 7.49996 20.25V19.5H16.5V20.25C16.5 21.4907 17.5092 22.5 18.7499 22.5H20.2499C21.4907 22.5 22.4999 21.4907 22.4999 20.25V19.5C23.3268 19.5 23.9999 18.8269 23.9999 18V11.25C24 10.2125 23.2906 9.34572 22.3341 9.08664ZM4.89766 3.5347C4.99361 3.21462 5.2822 3.00003 5.61615 3.00003H18.3837C18.7177 3.00003 19.0063 3.21462 19.1022 3.5347L20.7418 9.00001H3.25799L4.89766 3.5347ZM5.99993 20.2501C5.99993 20.6639 5.66375 21.0001 5.24992 21.0001H3.74994C3.33611 21.0001 2.99992 20.6639 2.99992 20.2501V19.5001H5.99993V20.2501ZM20.9999 20.2501C20.9999 20.6639 20.6638 21.0001 20.2499 21.0001H18.7499C18.3361 21.0001 17.9999 20.6639 17.9999 20.2501V19.5001H20.9999V20.2501ZM1.49994 18.0001V11.2501C1.49994 10.8363 1.83613 10.5001 2.24995 10.5001H21.75C22.1638 10.5001 22.5 10.8363 22.5 11.2501V18.0001H1.49994Z" fill="#00AF68"/>
+            <path d="M5.33789 12.3513C4.09716 12.3513 3.08789 13.3606 3.08789 14.6013C3.08789 15.842 4.09716 16.8513 5.33789 16.8513C6.57862 16.8513 7.58788 15.842 7.58788 14.6013C7.58788 13.3606 6.57862 12.3513 5.33789 12.3513ZM5.33789 15.3513C4.92406 15.3513 4.58787 15.0151 4.58787 14.6013C4.58787 14.1875 4.92406 13.8513 5.33789 13.8513C5.75171 13.8513 6.0879 14.1875 6.0879 14.6013C6.0879 15.0151 5.75171 15.3513 5.33789 15.3513Z" fill="#00AF68"/>
+            <path d="M19.2329 12.3513C17.9922 12.3513 16.9829 13.3606 16.9829 14.6013C16.9829 15.842 17.9922 16.8513 19.2329 16.8513C20.4736 16.8513 21.4829 15.842 21.4829 14.6013C21.4829 13.3606 20.4736 12.3513 19.2329 12.3513ZM19.2329 15.3513C18.8191 15.3513 18.4829 15.0151 18.4829 14.6013C18.4829 14.1875 18.8191 13.8513 19.2329 13.8513C19.6467 13.8513 19.9829 14.1875 19.9829 14.6013C19.9829 15.0151 19.6467 15.3513 19.2329 15.3513Z" fill="#00AF68"/>
+            </svg>
+            <span class="pl-1">Ваш автомобиль</span>
+            <div class="d-flex row justify-content-between">
+              <input placeholder="VIN Автомобиля" type="text" name="" id="" class="my-form-control">
+              <input placeholder="СТС Автомобиля" type="text" name="" id="" class="my-form-control">
+              <input placeholder="х 000 хх" type="text" name="" id="" class="my-form-control">
+            </div>
+        </div>
+        <div class="form-check-auto form-check-full-name">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M3 21.5L3.16547 20.4362C3.37405 19.0954 4.24842 17.9469 5.54504 17.5466C7.13654 17.0553 9.49052 16.5 12 16.5C14.5095 16.5 16.8635 17.0553 18.455 17.5466C19.7516 17.9469 20.6259 19.0954 20.8345 20.4362L21 21.5" stroke="#00AF68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#00AF68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="pl-1">Персональные данные</span>
+            <div class="d-flex row justify-content-between mb-5">
+              <input placeholder="Фамилия" type="text" name="" id="" class="my-form-control ">
+              <input placeholder="Имя" type="text" name="" id="" class="my-form-control ">
+              <input placeholder="Отчество" type="text" name="" id="" class="my-form-control ">
+              <input placeholder="Дата рождения" type="text" name="" id="" class="my-form-control ">
+            </div>
+         
+        </div>
+
+      </form>
+    </div>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide container-fluid m-0 p-0 col-12 col-md-10 col-xl-8 m-auto" data-ride="carousel">
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row justify-content-around align-content-center">
+                   <div class="d-flex flex-column align-items-center justify-content-center col-12 col-md-6">
+                       <img style="height: 131px; width: 131px;" src="img/shield_slide_1.png" alt="первый слайдер">
+                      <span class="h2-slider-home">Гарантия самой низкой цены<br> Безопасно и надежно</span>
+                   </div>
+                   <div class="d-none flex-column col-12 col-md-6 d-md-flex  seporator-vertic">
+                    <ul id="slider">
+                      <li>
+                        25+ лет опыта работы на автомобильном рынке.
+                      </li>
+                      <li>
+                        10+ лет опыта работы на рынке
+                        онлайн-аукционов автомобилей.
+                      </li>
+                      <li>
+                        Все продаваемые автомобили
+                        проверенному пробегу.
+                      </li>
+                      <li>
+                        На каждый автомобиль представлен
+                        VIN-номер.
+                      </li>
+                      <li>
+                        Все автомобили получили оценку
+                        сертифицированных независимых
+                        экспертов ЕС.
+                      </li>
+                    </ul>
+                </div>
+            </div>
+              
+          </div>
+          
+
+
+          
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row justify-content-around align-content-center">
+                   <div class="d-flex flex-column align-items-center justify-content-center col-12 col-md-6">
+                       <img style="height: 131px; width: 131px;" src="img/shield_slide_1.png" alt="первый слайдер">
+                      <span class="h2-slider-home">Гарантия самой низкой цены<br> Безопасно и надежно</span>
+                   </div>
+                   <div class="d-none flex-column col-12 col-md-6 d-md-flex  seporator-vertic">
+                    <ul id="slider">
+                      <li>
+                        25+ лет опыта работы на автомобильном рынке.
+                      </li>
+                      <li>
+                        10+ лет опыта работы на рынке
+                        онлайн-аукционов автомобилей.
+                      </li>
+                      <li>
+                        Все продаваемые автомобили
+                        проверенному пробегу.
+                      </li>
+                      <li>
+                        На каждый автомобиль представлен
+                        VIN-номер.
+                      </li>
+                      <li>
+                        Все автомобили получили оценку
+                        сертифицированных независимых
+                        экспертов ЕС.
+                      </li>
+                    </ul>
+                </div>
+            </div>
+              
+          </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="carousel-item">
+          
+          <div class="container">
+            <div class="row justify-content-around align-content-center">
+                   <div class="d-flex flex-column align-items-center justify-content-center col-12 col-md-6">
+                       <img style="height: 131px; width: 131px;" src="img/shield_slide_1.png" alt="первый слайдер">
+                      <span class="h2-slider-home">Гарантия самой низкой цены<br> Безопасно и надежно</span>
+                   </div>
+                   <div class="d-none flex-column col-12 col-md-6 d-md-flex  seporator-vertic">
+                    <ul id="slider">
+                      <li>
+                        25+ лет опыта работы на автомобильном рынке.
+                      </li>
+                      <li>
+                        10+ лет опыта работы на рынке
+                        онлайн-аукционов автомобилей.
+                      </li>
+                      <li>
+                        Все продаваемые автомобили
+                        проверенному пробегу.
+                      </li>
+                      <li>
+                        На каждый автомобиль представлен
+                        VIN-номер.
+                      </li>
+                      <li>
+                        Все автомобили получили оценку
+                        сертифицированных независимых
+                        экспертов ЕС.
+                      </li>
+                    </ul>
+                </div>
+            </div>
+              
+          </div>
+
+
+
+
+
+
+
+
+          
+        </div>
+        <div class="carousel-item">
+          
+          <div class="container">
+            <div class="row justify-content-around align-content-center">
+                   <div class="d-flex flex-column align-items-center justify-content-center col-12 col-md-6">
+                       <img style="height: 131px; width: 131px;" src="img/shield_slide_1.png" alt="первый слайдер">
+                      <span class="h2-slider-home">Гарантия самой низкой цены<br> Безопасно и надежно</span>
+                   </div>
+                   <div class="d-none flex-column col-12 col-md-6 d-md-flex  seporator-vertic">
+                    <ul id="slider">
+                      <li>
+                        25+ лет опыта работы на автомобильном рынке.
+                      </li>
+                      <li>
+                        10+ лет опыта работы на рынке
+                        онлайн-аукционов автомобилей.
+                      </li>
+                      <li>
+                        Все продаваемые автомобили
+                        проверенному пробегу.
+                      </li>
+                      <li>
+                        На каждый автомобиль представлен
+                        VIN-номер.
+                      </li>
+                      <li>
+                        Все автомобили получили оценку
+                        сертифицированных независимых
+                        экспертов ЕС.
+                      </li>
+                    </ul>
+                </div>
+            </div>
+              
+          </div>
+
+
+
+
+
+
+
+
+          
+        </div>
+        <div class="carousel-item">
+          
+          <div class="container">
+            <div class="row justify-content-around align-content-center">
+                   <div class="d-flex flex-column align-items-center justify-content-center col-12 col-md-6">
+                       <img style="height: 131px; width: 131px;" src="img/shield_slide_1.png" alt="первый слайдер">
+                      <span class="h2-slider-home">Гарантия самой низкой цены<br> Безопасно и надежно</span>
+                   </div>
+                   <div class="d-none flex-column col-12 col-md-6 d-md-flex  seporator-vertic">
+                    <ul id="slider">
+                      <li>
+                        25+ лет опыта работы на автомобильном рынке.
+                      </li>
+                      <li>
+                        10+ лет опыта работы на рынке
+                        онлайн-аукционов автомобилей.
+                      </li>
+                      <li>
+                        Все продаваемые автомобили
+                        проверенному пробегу.
+                      </li>
+                      <li>
+                        На каждый автомобиль представлен
+                        VIN-номер.
+                      </li>
+                      <li>
+                        Все автомобили получили оценку
+                        сертифицированных независимых
+                        экспертов ЕС.
+                      </li>
+                    </ul>
+                </div>
+            </div>
+              
+          </div>
+
+
+
+
+
+
+
+
+          
+        </div>
+
+
+
+
+
+
+       
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <ol id = "slider-pag" class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid au-info p-0">
+    <div class="container-fluid filter">
+<div class="container">
+        <h2 class='au-info-title text-center'>Покупать транспортные средства на аукционах легко</h2>
+        <div class="content d-flex row col-12 col-md-10 m-auto">
+          <div class="item d-flex col-6 col-md-6 col-xl-3 flex-column align-items-center">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+              <path d="M19.6251 56.6722H16.2085C15.5181 56.6722 14.9585 56.1125 14.9585 55.4222C14.9585 54.732 15.5182 54.1722 16.2085 54.1722H19.6251C20.3155 54.1722 20.8751 54.732 20.8751 55.4222C20.8751 56.1125 20.3155 56.6722 19.6251 56.6722Z" fill="white"/>
+              <path d="M29.0139 56.6722H25.5972C24.9069 56.6722 24.3472 56.1125 24.3472 55.4222C24.3472 54.732 24.9069 54.1722 25.5972 54.1722H29.0139C29.7043 54.1722 30.2639 54.732 30.2639 55.4222C30.2639 56.1125 29.7043 56.6722 29.0139 56.6722Z" fill="white"/>
+              <path d="M38.4031 56.6722H34.9863C34.2961 56.6722 33.7363 56.1125 33.7363 55.4222C33.7363 54.732 34.2961 54.1722 34.9863 54.1722H38.4031C39.0933 54.1722 39.6531 54.732 39.6531 55.4222C39.6531 56.1125 39.0933 56.6722 38.4031 56.6722Z" fill="white"/>
+              <path d="M47.7916 56.6722H44.375C43.6848 56.6722 43.125 56.1125 43.125 55.4222C43.125 54.732 43.6848 54.1722 44.375 54.1722H47.7916C48.4819 54.1722 49.0416 54.732 49.0416 55.4222C49.0416 56.1125 48.4819 56.6722 47.7916 56.6722Z" fill="white"/>
+              <path d="M31.9776 64C31.4485 64 30.9671 63.6544 30.7949 63.1546C30.6245 62.6604 30.7902 62.0954 31.2009 61.7712C31.6061 61.4514 32.1765 61.4157 32.6199 61.6789C33.0674 61.9445 33.306 62.4837 33.2027 62.9937C33.086 63.5707 32.5679 64 31.9776 64Z" fill="white"/>
+              <path d="M55.2454 64H37.6506C36.9604 64 36.4006 63.4402 36.4006 62.75C36.4006 62.0597 36.9604 61.5 37.6506 61.5H53.9954V49.3445H10.0044V61.5H26.3491C27.0395 61.5 27.5991 62.0597 27.5991 62.75C27.5991 63.4402 27.0395 64 26.3491 64H8.75439C8.06414 64 7.50439 63.4402 7.50439 62.75V48.0945C7.50439 47.4042 8.06414 46.8445 8.75439 46.8445H55.2454C55.9356 46.8445 56.4954 47.4042 56.4954 48.0945V62.75C56.4954 63.4402 55.9356 64 55.2454 64Z" fill="white"/>
+              <path d="M39.3269 21.6785C42.2144 19.4691 44.08 15.9884 44.08 12.08C44.08 5.41913 38.6609 0 31.9999 0C25.3389 0 19.9198 5.41913 19.9198 12.0801C19.9198 15.9885 21.7854 19.4692 24.6729 21.6786C19.1231 22.0044 14.708 26.6224 14.708 32.2524V39.7006C14.708 40.391 15.2678 40.9506 15.958 40.9506H48.0415C48.7318 40.9506 49.2915 40.391 49.2915 39.7006V32.2524C49.2916 26.6224 44.8765 22.0042 39.3269 21.6785ZM22.4198 12.0801C22.4198 6.79763 26.7174 2.5 31.9999 2.5C37.2824 2.5 41.58 6.79763 41.58 12.0801C41.58 17.3626 37.2824 21.6602 31.9999 21.6602C26.7174 21.6602 22.4198 17.3625 22.4198 12.0801ZM46.7916 38.4505H17.2081V32.2523C17.2081 27.7903 20.8383 24.1601 25.3003 24.1601H38.6994C43.1614 24.1601 46.7915 27.7903 46.7915 32.2523V38.4505H46.7916Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0">
+              <rect width="64" height="64" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+              <span class="item-title">ЗАРЕГИСТРИРУЙСЯ</span>
+          </div>
+          <div class="item d-flex col-6 col-md-6 col-xl-3 flex-column align-items-center">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.0001 34.6666C8.3255 34.6666 5.3335 37.6586 5.3335 41.3332C5.3335 45.0079 8.3255 48 12.0001 48C15.6748 48 18.6668 45.008 18.6668 41.3334C18.6668 37.6587 15.6748 34.6666 12.0001 34.6666ZM12.0001 45.3334C9.79475 45.3334 8.00012 43.5387 8.00012 41.3334C8.00012 39.128 9.79475 37.3334 12.0001 37.3334C14.2055 37.3334 16.0001 39.128 16.0001 41.3334C16.0001 43.5386 14.2055 45.3334 12.0001 45.3334Z" fill="white"/>
+              <path d="M52.0001 34.6666C48.3255 34.6666 45.3335 37.6586 45.3335 41.3332C45.3335 45.0079 48.3255 48 52.0001 48C55.6747 48 58.6667 45.008 58.6667 41.3334C58.6667 37.6587 55.6747 34.6666 52.0001 34.6666ZM52.0001 45.3334C49.7947 45.3334 48.0001 43.5387 48.0001 41.3334C48.0001 39.128 49.7947 37.3334 52.0001 37.3334C54.2055 37.3334 56.0001 39.128 56.0001 41.3334C56.0001 43.5386 54.2055 45.3334 52.0001 45.3334Z" fill="white"/>
+              <path d="M56 26.6666H53.744C52.92 26.6666 52.112 26.384 51.4666 25.8666L40.96 17.4613C39.7814 16.52 38.3014 16 36.7946 16H17.52C15.2854 16 13.2134 17.1094 11.9734 18.968L9.704 22.376C9.024 23.392 7.888 24 6.66663 24C2.992 24 0 26.992 0 30.6666V36C0 39.6746 2.992 42.6666 6.66663 42.6666C7.40263 42.6666 8 42.0692 8 41.3332C8 40.5972 7.40263 40 6.66663 40C4.46125 40 2.66663 38.2054 2.66663 36V30.6666C2.66663 28.4612 4.46125 26.6666 6.66663 26.6666C8.784 26.6666 10.7466 25.616 11.9226 23.8533L14.192 20.4479C14.936 19.3332 16.1814 18.6665 17.52 18.6665H36.7946C37.7012 18.6665 38.5866 18.9785 39.296 19.5439L49.8026 27.9465C50.9146 28.8399 52.3172 29.3331 53.7466 29.3331H56C59.912 29.3331 61.3334 33.3197 61.3334 35.9997C61.3334 38.6264 59.3228 39.9997 57.3334 39.9997C56.5974 39.9997 56 40.5971 56 41.3331C56 42.0691 56.5974 42.6665 57.3334 42.6665C61.1334 42.6666 64 39.8 64 36C64 31.4746 61.1974 26.6666 56 26.6666Z" fill="white"/>
+              <path d="M46.6666 40H17.3334C16.5974 40 16 40.5974 16 41.3334C16 42.0694 16.5974 42.6668 17.3334 42.6668H46.6668C47.4028 42.6668 48.0001 42.0694 48.0001 41.3334C48.0001 40.5974 47.4026 40 46.6666 40Z" fill="white"/>
+              <path d="M43.9998 26.6666H31.9998V22.6666C31.9998 21.9306 31.4024 21.3333 30.6664 21.3333C29.9304 21.3333 29.333 21.9306 29.333 22.6666V28C29.333 28.736 29.9304 29.3334 30.6664 29.3334H43.9998C44.7358 29.3334 45.3331 28.736 45.3331 28C45.3331 27.264 44.7358 26.6666 43.9998 26.6666Z" fill="white"/>
+              <path d="M25.3333 26.6666H16.824L18.528 23.264C18.856 22.6054 18.5893 21.8054 17.9306 21.4746C17.2692 21.1466 16.472 21.4106 16.1412 22.072L13.4746 27.4054C13.2666 27.816 13.2906 28.3094 13.5332 28.7014C13.7758 29.0934 14.2052 29.3334 14.6666 29.3334H25.3332C26.0692 29.3334 26.6666 28.736 26.6666 28C26.6666 27.264 26.0693 26.6666 25.3333 26.6666Z" fill="white"/>
+              <path d="M36 32H33.3334C32.5974 32 32 32.5974 32 33.3334C32 34.0694 32.5974 34.6668 33.3334 34.6668H36C36.736 34.6668 37.3334 34.0694 37.3334 33.3334C37.3334 32.5974 36.736 32 36 32Z" fill="white"/>
+              </svg>
+              <span class="item-title">ВЫБЕРИ</span>
+          </div>
+          <div class="item d-flex col-6 col-md-6 col-xl-3 flex-column align-items-center">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+              <path d="M33.0721 52.9262H30.2088V50.9283C30.2088 48.232 28.0153 46.0385 25.319 46.0385H9.0035C6.3072 46.0385 4.11365 48.232 4.11365 50.9283V52.9262H1.25031C0.559765 52.9262 0 53.4859 0 54.1765V61.3429C0 62.0335 0.559765 62.5932 1.25031 62.5932H33.0721C33.7626 62.5932 34.3225 62.0335 34.3225 61.3429V54.1765C34.3225 53.4859 33.7626 52.9262 33.0721 52.9262ZM31.8218 60.0926H2.50063V55.4268H11.6445C12.3351 55.4268 12.8948 54.867 12.8948 54.1765C12.8948 53.4859 12.3351 52.9262 11.6445 52.9262H6.61415V50.9283C6.61415 49.6108 7.68592 48.5391 9.00338 48.5391H25.3188C26.6363 48.5391 27.7081 49.6108 27.7081 50.9283V52.9262H22.6434C21.9529 52.9262 21.3931 53.4859 21.3931 54.1765C21.3931 54.867 21.9529 55.4268 22.6434 55.4268H31.8217V60.0926H31.8218Z" fill="white"/>
+              <path d="M62.4345 47.3549L61.4429 46.3634C60.4529 45.3734 59.3033 44.5815 58.0264 44.0098C57.0274 43.5616 56.1276 42.9423 55.3535 42.1705L36.2029 23.0197C37.4933 22.1935 38.9265 21.4544 40.5343 20.7769C42.3591 21.9112 44.7938 21.6226 46.3103 20.1061C48.1152 18.301 48.1153 15.2889 46.3103 13.4839L35.6026 2.77614C33.7766 0.950309 30.806 0.950559 28.9803 2.77614C27.3944 4.36204 27.187 6.81152 28.3562 8.62448C27.6806 10.225 26.9442 11.6525 26.1211 12.9381L24.9773 11.7943C23.2764 10.1058 20.4487 10.0937 18.7489 11.7934C17.0316 13.5108 17.0316 16.3053 18.7489 18.0227L19.8898 19.1636C18.6025 19.9863 17.1735 20.7225 15.5708 21.3977C13.7586 20.2339 11.3139 20.4428 9.73012 22.0265C7.90441 23.8523 7.90441 26.8229 9.73012 28.6486L20.4379 39.3564C22.2402 41.1586 25.2578 41.1586 27.0601 39.3564C28.5742 37.8422 28.8648 35.4123 27.7359 33.5882C28.413 31.9784 29.1516 30.5432 29.9773 29.2511L49.1251 48.3989C49.899 49.1729 50.5181 50.0715 50.9656 51.0713C51.5384 52.3472 52.3294 53.4963 53.318 54.4883L54.3095 55.4799C56.3313 57.5016 60.0049 57.5007 62.0266 55.4792L62.4337 55.0722C64.5217 52.9838 64.5228 49.4433 62.4345 47.3549ZM33.5133 21.8345C32.6078 22.5026 31.7551 23.2348 30.9788 24.0111C28.8145 26.1754 27.1629 28.7933 25.8928 31.5666L17.5743 23.2481C20.3478 21.9781 22.9657 20.3264 25.1298 18.162C27.2893 16.0027 28.9384 13.3917 30.2074 10.6252L38.5158 18.9336C36.7631 19.7374 35.0668 20.6892 33.5133 21.8345ZM30.7486 4.54446C31.588 3.705 32.9949 3.70512 33.8344 4.54446L44.5421 15.2521C45.3884 16.0982 45.3755 17.4903 44.5421 18.3379C43.7993 19.0807 42.3953 19.2489 41.6093 18.4629L30.6781 7.53158C29.8713 6.72488 29.9623 5.33065 30.7486 4.54446ZM20.5172 16.2543C19.7748 15.5118 19.7748 14.3039 20.5172 13.5615C21.2491 12.8294 22.4773 12.8304 23.2091 13.5622L24.6348 14.9879C23.8271 15.9701 22.9244 16.8718 21.9415 17.6785L20.5172 16.2543ZM25.2919 37.588C24.4413 38.4388 23.057 38.4389 22.2062 37.588L11.4984 26.8802C10.6477 26.0295 10.6477 24.6452 11.4984 23.7945C12.3376 22.9552 13.7449 22.9551 14.5842 23.7945L25.292 34.5022C26.1325 35.3428 26.1325 36.7475 25.2919 37.588ZM60.6655 53.3036L60.2584 53.7106C59.1995 54.7696 57.1373 54.7709 56.0777 53.7115L55.0877 52.7215C54.3146 51.9458 53.6952 51.046 53.2472 50.0482C52.6755 48.7706 51.8835 47.6209 50.8933 46.6306L31.4622 27.1994C32.2691 26.2165 33.1707 25.3141 34.1526 24.5061L53.5865 43.9399C54.5771 44.9276 55.7265 45.7188 57.0036 46.2916C58.0022 46.7388 58.9008 47.3577 59.6745 48.1315L60.6661 49.123C61.7991 50.2559 61.7988 52.1705 60.6655 53.3036Z" fill="white"/>
+              <path d="M18.316 53.6981C18.0541 53.0697 17.3132 52.76 16.683 53.0216C16.0544 53.2826 15.7453 54.025 16.0066 54.6546C16.2677 55.2836 17.0096 55.5924 17.6395 55.331C18.2679 55.0702 18.5782 54.3276 18.316 53.6981Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0">
+              <rect width="64" height="64" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+              <span class="item-title">СДЕЛАЙ СТАВКИ</span>
+          </div>
+          <div class="item d-flex col-6 col-md-6 col-xl-3 flex-column align-items-center">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M37 56.5C36.31 56.5 35.75 57.06 35.75 57.75C35.75 58.44 36.31 59 37 59C37.69 59 38.25 58.44 38.25 57.75C38.25 57.06 37.69 56.5 37 56.5Z" fill="white"/>
+              <path d="M54.5 5.75H50.75V3.75C50.75 1.68225 49.0677 0 47 0H17C14.9323 0 13.25 1.68225 13.25 3.75V5.75H9.5C7.43225 5.75 5.75 7.43225 5.75 9.5C5.75 17.6321 9.55525 23.6084 15.7285 25.2722C17.8448 29.9304 21.1908 33.8903 25.4377 36.7516C26.416 37.4108 27 38.5391 27 39.77V46.6574C26.1431 46.8771 25.357 47.3226 24.7149 47.9649C23.7702 48.9096 23.25 50.165 23.25 51.5H22C19.9323 51.5 18.25 53.1823 18.25 55.25V62.75C18.25 63.4404 18.8097 64 19.5 64H44.5C45.1903 64 45.75 63.4404 45.75 62.75V55.25C45.75 53.1823 44.0677 51.5 42 51.5H40.75C40.75 49.1745 39.1541 47.2146 37 46.6582V39.7762C37 38.5414 37.5844 37.4109 38.5635 36.7518C42.8109 33.8901 46.1569 29.9301 48.273 25.2719C54.4454 23.6074 58.25 17.6315 58.25 9.5C58.25 7.43225 56.5677 5.75 54.5 5.75ZM8.25 9.5C8.25 8.81075 8.81075 8.25 9.5 8.25H13.25V13.8375C13.25 16.6869 13.6816 19.4771 14.5337 22.1642C10.5559 20.1939 8.25 15.6432 8.25 9.5ZM42 54C42.6893 54 43.25 54.5607 43.25 55.25V61.5H20.75V55.25C20.75 54.5607 21.3108 54 22 54H42ZM48.25 13.8375C48.25 17.252 47.5703 20.5745 46.2293 23.7125C44.3218 28.1771 41.188 31.969 37.167 34.6781C35.497 35.8022 34.5 37.7081 34.5 39.7762V47.75C34.5 48.4404 35.0597 49 35.75 49C37.1285 49 38.25 50.1215 38.25 51.5H25.75C25.75 50.8327 26.0102 50.2051 26.4826 49.7326C26.9319 49.2834 27.5215 49.0261 28.152 49.0019C28.1844 49.0044 28.217 49.0056 28.2499 49.0056C28.9401 49.0056 29.4999 48.4404 29.4999 47.75V39.77C29.4999 37.7062 28.5035 35.8029 26.8346 34.6784C22.8132 31.9691 19.6795 28.1772 17.7717 23.7122C16.4302 20.5754 15.75 17.253 15.75 13.8375V3.75C15.75 3.06075 16.3108 2.5 17 2.5H47C47.6893 2.5 48.25 3.06075 48.25 3.75V13.8375ZM49.4668 22.164C50.3185 19.4762 50.75 16.6861 50.75 13.8375V8.25H54.5C55.1893 8.25 55.75 8.81075 55.75 9.5C55.75 15.6429 53.4444 20.1934 49.4668 22.164Z" fill="white"/>
+              <path d="M41.8923 14.7699C41.7454 14.3173 41.3541 13.9874 40.8831 13.9192L35.4886 13.1362L33.0757 8.2468C32.8651 7.82005 32.4306 7.54993 31.9548 7.54993C31.4789 7.54993 31.0444 7.82005 30.8337 8.2468L28.4209 13.1362L23.0265 13.9192C22.5555 13.9876 22.1644 14.3174 22.0172 14.7699C21.8702 15.2226 21.9929 15.7193 22.3336 16.0514L26.2379 19.8564L25.3164 25.2298C25.236 25.6988 25.4287 26.1727 25.8137 26.4524C26.1987 26.7321 26.7091 26.7689 27.1301 26.5476L31.9549 24.0109L36.7808 26.5476C37.2045 26.7703 37.7146 26.7303 38.0971 26.4523C38.482 26.1726 38.6747 25.6986 38.5942 25.2296L37.6717 19.8563L41.5759 16.0514C41.9167 15.7193 42.0392 15.2226 41.8923 14.7699ZM35.4561 18.5247C35.1615 18.8119 35.0269 19.2258 35.0966 19.6314L35.7017 23.1561L32.5364 21.4922C32.172 21.3008 31.737 21.3008 31.3731 21.4923L28.2087 23.1561L28.8132 19.6312C28.8827 19.2256 28.7482 18.8118 28.4536 18.5247L25.8931 16.0292L29.4307 15.5157C29.838 15.4566 30.19 15.2008 30.3721 14.8318L31.9549 11.6244L33.5376 14.8318C33.7197 15.2008 34.0717 15.4566 34.479 15.5157L38.0168 16.0292L35.4561 18.5247Z" fill="white"/>
+              <path d="M32 56.5H27C26.3098 56.5 25.75 57.0596 25.75 57.75C25.75 58.4404 26.3098 59 27 59H32C32.6902 59 33.25 58.4404 33.25 57.75C33.25 57.0596 32.6902 56.5 32 56.5Z" fill="white"/>
+              <path d="M51.2515 60.25H51.9483C51.5933 60.1796 51.3546 60.1726 51.2515 60.25Z" fill="white"/>
+              </svg>
+              <span class="item-title">ВЫИГРАЙ</span>
+          </div>
+
+          </div>
+          <div class="au-show text-center">
+            <button type="submit" class="btn btn-success mb-2 ">ПРОСМОТРЕТЬ ТЕКУЩИЕ АУКЦИОНЫ</button>
+          </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+  </section>
+
+  <section >
+    <div id="maps-selectd" class="container-fluid p-0 m-0">
+      <iframe src="https://snazzymaps.com/embed/306456" width="100%" height="600px" style="border:none;"></iframe>
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75252.85470672045!2d27.523329269378756!3d53.88461961689642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1617529409345!5m2!1sru!2sby" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+      <div class="selected-map">
+        <span class="filial-title">Выбор филиала</span>
+        <div id="search-map" class="d-flex row justify-content-center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.5">
+            <path d="M11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20Z" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 22L18 18" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            </svg>
+            <input type="text" name="search" class="" placeholder="Введите филиал">
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="pt-4">
+    <div class="container">
+      <div class="hr-footer"></div>
+      <div class="top-bar  d-flex justify-content-between">
+        <div class="footer-top-left">
+          <span class='footer-title-dark'>Рассылка наших лучших предложений</span>
+          <p class='footer-dec-dark'>Подпишитесь на наши эксклюзивные предложения.</p>
+        </div>
+
+        <div class='footer-top-right'>
+          <span class='footer-title-dark'>Свяжитесь с нами 24/7</span>
+          <p class='footer-tel-dark'><a href="tel:+375291191122">+375 29 119 11 22<a></p>
+        </div>
+
+      </div>
+      <div class="mailer">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control col-lg-3 col-12" placeholder="Введите ваш Email" ">
+            <div class=" input-group-append">
+          <button class="btn btn-success" type="submit"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.2827 5L20.9998 12L14.2827 19" stroke="white" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <line x1="19.7329" y1="12.0317" x2="3.99985" y2="12.0317" stroke="white" stroke-width="2"
+                stroke-linecap="round" />
+            </svg></button>
+        </div>
+      </div>
+    </div>
+    <div id="footer-nav" class = "d-flex justify-content-between">
+
+      <div class="footer-nav-item  col-lg-2,4">
+        <span class="footer-nav-item-title">Помощь и информация</span>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#" class="footer-links">mail@mail.ru</a>
+          </li>
+          <li>
+            <a href="#" class="footer-links">ООО Название компании</a>
+          </li>
+          <li>
+            <a href="#" class="footer-links">Адрес</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-nav-item  col-lg-2,4">
+        <span class="footer-nav-item-title">Подпишись на нас</span>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#" class="footer-links">Facebook</a>
+          </li>
+          <li>
+            <a href="#" class="footer-links">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-nav-item col-lg-2,4">
+        <span class="footer-nav-item-title">Наши отзывы</span>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#" class="footer-links">Google</a>
+          </li>
+          <li>
+            <a href="#" class="footer-links">Yandex</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-nav-item  col-lg-2,4">
+        <span class="footer-nav-item-title">Форма оплаты </span>
+        <div class="img-bank">
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.0833 30.0834C17.2045 30.0834 22.1667 25.1212 22.1667 19.0001C22.1667 12.8789 17.2045 7.91675 11.0833 7.91675C4.96218 7.91675 0 12.8789 0 19.0001C0 25.1212 4.96218 30.0834 11.0833 30.0834Z"
+              fill="#EA001B" />
+            <path
+              d="M26.9167 30.0834C33.0378 30.0834 38 25.1212 38 19.0001C38 12.8789 33.0378 7.91675 26.9167 7.91675C20.7955 7.91675 15.8333 12.8789 15.8333 19.0001C15.8333 25.1212 20.7955 30.0834 26.9167 30.0834Z"
+              fill="#FFA200" fill-opacity="0.8" />
+          </svg>
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M15.5327 13.0542L13.6255 24.9221H16.6739L18.5798 13.0542H15.5327ZM24.7275 17.8885C23.6623 17.3625 23.0092 17.0074 23.0092 16.4694C23.0223 15.9802 23.5615 15.479 24.7656 15.479C25.7559 15.4542 26.4838 15.6869 27.0361 15.9185L27.3127 16.042L27.7271 13.5589C27.125 13.3261 26.1703 13.0697 24.9911 13.0697C21.9808 13.0697 19.8611 14.6348 19.848 16.8733C19.8231 18.5252 21.3656 19.4418 22.5199 19.9917C23.6991 20.5558 24.1005 20.9215 24.1005 21.4227C24.0875 22.1921 23.147 22.5472 22.2695 22.5472C21.0535 22.5472 20.4004 22.3643 19.4088 21.9355L19.0074 21.7527L18.5811 24.3332C19.2972 24.6515 20.6141 24.9316 21.981 24.946C25.1801 24.946 27.2618 23.4046 27.288 21.0189C27.2984 19.7102 26.485 18.7079 24.7275 17.8885ZM35.5421 13.0909H33.1836C32.4569 13.0909 31.9046 13.3 31.59 14.0457L27.062 24.9221H30.2611L31.1422 22.5674H34.7214L35.1785 24.9316H38.0001L35.5421 13.0909ZM32.0294 20.191C32.0912 20.1969 33.2573 16.347 33.2573 16.347L34.186 20.191C34.186 20.191 32.6315 20.191 32.0294 20.191ZM11.0784 13.0542L8.09181 21.1174L7.76646 19.5272C7.21424 17.6925 5.48292 15.6988 3.55078 14.7084L6.28561 24.9103H9.51093L14.3037 13.0555H11.0784V13.0542Z"
+                fill="#2394BC" />
+              <path
+                d="M6.76166 14.5849C6.52891 13.68 5.78666 13.0697 4.77859 13.0566H0.0487106L0 13.2762C3.68963 14.1858 6.78653 16.9847 7.79122 19.6175L6.76166 14.5849Z"
+                fill="#EFC75E" />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="38" height="38" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div class="footer-nav-item  col-lg-2,4">
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#" class="footer-nav-item-title">Войти</a>
+          </li>
+          <li>
+            <a href="#" class="footer-nav-item-title">О нас</a>
+          </li>
+          <li>
+            <a href="#" class="footer-nav-item-title">FAQ</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-logo"><a href='#'><svg width="79" height="34" viewBox="0 0 79 34" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14.4229 2.95238C9.61847 13.2984 4.7851 23.6317 0 33.9873C2.29547 33.9873 4.59095 33.9873 6.88642 33.9873C7.89364 31.7873 8.88477 29.5841 9.9113 27.3937C14.7382 27.4159 19.5426 27.3778 24.3567 27.4127C25.3414 29.6159 26.3454 31.8116 27.3687 34C29.6631 33.9778 31.9543 34 34.2487 34L19.8097 2.95238C18.0205 2.95238 16.2185 2.94921 14.4229 2.95238ZM12.4921 21.6603C13.9724 18.3778 15.4655 15.0984 16.9457 11.819C16.9457 11.6254 17.2675 11.6063 17.2933 11.8C18.7671 15.0857 20.2731 18.3714 21.7502 21.6603H12.4921ZM57.7301 22.4889C57.7301 23.3524 57.0415 23.7587 55.9635 23.7587H52.4237L53.3666 21.5683H56.4333C57.1927 21.5873 57.7237 21.8413 57.7237 22.4889H57.7301ZM58.0519 18.2286C58.0519 19.0317 57.4566 19.4635 56.3625 19.4635H53.6176L54.5121 17.381H56.7647C57.566 17.381 58.0519 17.6413 58.0519 18.2286ZM78.0032 11.2444H54.274C55.4647 8.48042 56.6542 5.71429 57.8427 2.94603H50.9467C47.9304 10.1799 44.9141 17.4095 41.8978 24.6349H41.6822C38.6637 17.4095 35.6464 10.182 32.6301 2.95238H25.7436C30.1951 13.2995 34.6466 23.6434 39.0981 33.9841C40.897 33.9841 42.699 33.9841 44.5011 33.9841C45.209 32.3376 45.9181 30.6889 46.6282 29.0381H70.3574L78.0032 11.2444ZM60.8193 22.5397C60.8193 24.8857 58.6118 25.9683 55.7961 25.9683H47.9475C49.4964 22.3704 51.0453 18.7725 52.5942 15.1746H57.4984C59.9698 15.1746 61.2988 16.0825 61.2988 17.7143C61.2988 19.0095 60.5329 19.9206 59.3455 20.4159C59.7842 20.5752 60.1618 20.8653 60.4258 21.2459C60.6899 21.6264 60.8274 22.0786 60.8193 22.5397ZM65.3534 25.9683H62.364L64.2947 22.0635L61.508 15.1746H64.623L66.3414 19.4794L69.8457 15.1746H72.9896L67.0268 22.3397L65.3534 25.9683ZM41.9718 10.5079C41.7087 10.5109 41.4499 10.574 41.2156 10.6921L41.8913 2.69524L42.7312 10.6889C42.4914 10.5716 42.2265 10.5128 41.9589 10.5175L41.9718 10.5079ZM40.8358 12.146C40.8358 11.9239 40.9026 11.7067 41.0276 11.522C41.1526 11.3373 41.3304 11.1932 41.5383 11.1081C41.7463 11.0229 41.9752 11.0005 42.1961 11.0436C42.4169 11.0867 42.6199 11.1934 42.7794 11.3503C42.9388 11.5071 43.0476 11.7071 43.0919 11.9248C43.1362 12.1426 43.1141 12.3685 43.0284 12.5739C42.9426 12.7793 42.7971 12.955 42.6102 13.0789C42.4233 13.2028 42.2034 13.2692 41.9782 13.2698C41.8282 13.2715 41.6793 13.244 41.5401 13.1889C41.4008 13.1338 41.2739 13.0522 41.1666 12.9488C41.0594 12.8453 40.9738 12.722 40.9148 12.5859C40.8559 12.4498 40.8247 12.3036 40.823 12.1556L40.8358 12.146ZM41.1319 13.6984C41.3183 13.8111 41.5255 13.8859 41.7416 13.9186C41.9576 13.9513 42.1781 13.9412 42.3901 13.8889L40.9356 19.946L41.1319 13.6984ZM42.1327 1.52381H41.5116V0H42.123L42.1327 1.52381ZM47.4616 4.23492L46.9339 3.91746L47.777 2.48254L48.3079 2.8L47.4616 4.23492ZM36.2696 4.23492L35.4265 2.8L35.9542 2.48254L36.8005 3.91746L36.2696 4.23492Z"
+            fill="#00AF68" />
+        </svg></a></div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js/jQuery3.5.1.min.js" ></script>
+     <script src="js/index.js" ></script>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script> -->
+    <script src="js/bootstrap.min.js" ></script>
+  </footer>
+</body>
+
+</html>

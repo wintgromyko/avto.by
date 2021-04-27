@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <header>
+    <div class="top-bar container d-flex flex-row justify-content-between align-items-center">
+      <div>
+        <img src="img/logo.png">
+      </div>
+
+      <div class="d-flex flex-row">
+        <div class="d-flex flex-row mr-4">
+          <span class="city">Минск</span>
+          <img class="geo" src="img/Location.png">
+        </div>
+        <div class="d-flex flex-row">
+          <span class="set-color">Тёмная</span>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container-fluid nav-menu p-0">
+      <nav class="container navbar navbar-expand-lg p-0">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 7H20" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+              <path d="M4 17H16" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+            </svg></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex justify-content-between w-100 p0">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">ВОПРОС-ОТВЕТ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">СТАТЬ АВТОДИЛЛЕРОМ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">КОНТАКТЫ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">О КОМПАНИИ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">+375 29 119 11 22</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="auction container-fluid">
+    <div class="container">
+      <div class="auction-top d-lg-flex  justify-content-lg-between">
+        <h2>Аукционы о продаже автомобилей </h2><button id='btn-next' class="btn btn-success mb-2">Подать
+          объявление</button>
+      </div>
+      <div class="auction-top-nav ">
+
+        <nav class="d-flex row justify-content-between">
+          <div class="col-6 col-lg-2 mb-3">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Acura</span><span class="counts">103</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Alfa Romeo</span><span
+                    class="counts">22</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Audi</span><span class="counts">4021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">BMW</span><span class="counts">2021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Cadillac</span><span
+                    class="counts">2021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Chevrolet</span><span
+                    class="counts">2021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Chrysler</span><span class="counts">577</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Citroen</span><span class="counts">2041</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Daewoo</span><span class="counts">254</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2  mb-3">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Acura</span><span class="counts">103</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Alfa Romeo</span><span
+                    class="counts">22</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Audi</span><span class="counts">4021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">BMW</span><span class="counts">2021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Cadillac</span><span
+                    class="counts">2021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Chevrolet</span><span
+                    class="counts">2021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Chrysler</span><span class="counts">577</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Citroen</span><span class="counts">2041</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Daewoo</span><span class="counts">254</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Acura</span><span class="counts">103</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Alfa Romeo</span><span
+                    class="counts">22</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Audi</span><span class="counts">4021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">BMW</span><span class="counts">2021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Cadillac</span><span
+                    class="counts">2021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Chevrolet</span><span
+                    class="counts">2021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Chrysler</span><span class="counts">577</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Citroen</span><span class="counts">2041</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Daewoo</span><span class="counts">254</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Acura</span><span class="counts">103</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Alfa Romeo</span><span
+                    class="counts">22</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Audi</span><span class="counts">4021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">BMW</span><span class="counts">2021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Cadillac</span><span
+                    class="counts">2021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Chevrolet</span><span
+                    class="counts">2021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Chrysler</span><span class="counts">577</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Citroen</span><span class="counts">2041</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Daewoo</span><span class="counts">254</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Acura</span><span class="counts">103</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Alfa Romeo</span><span
+                    class="counts">22</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Audi</span><span class="counts">4021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">BMW</span><span class="counts">2021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Cadillac</span><span
+                    class="counts">2021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Chevrolet</span><span
+                    class="counts">2021</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Chrysler</span><span class="counts">577</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Citroen</span><span class="counts">2041</span></a>
+              </li>
+              <li>
+                <a class="links-auk" href="#"><span class="name-auto">Daewoo</span><span class="counts">254</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+
+
+
+
+
+        <div id="accordion">
+
+          <div id="headingOne">
+            <h5 class="mb-0">
+              <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span class="min-title-auk">Все марки авто </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                  <path opacity="0.22" d="M10.6667 1L6.02454 5.64212L1.38243 1" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="d-flex row justify-content-end pb-4">
+                <span class="nav-item">
+                  <a class="nav-link" href="#">Добавить марку
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <circle cx="12" cy="12" r="12" fill="#00AF68" />
+                      <path d="M12 7.5V16.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M7.5 12L16.5 12" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </span>
+
+              </div>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <section class="form-car container-fluid p-0">
+              <div class="container p-0">
+                <div class="input-group form-car-item mb-3">
+                  <input type="text" class="form-control" list="brands" placeholder="Все марки">
+                  <datalist id="brands">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                  </datalist>
+                  <input type="text" class="form-control" list="Model" placeholder="Модель">
+                  <datalist id="Model">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                  </datalist>
+                  <input type="text" class="form-control" list="Generation" placeholder="Поколение">
+                  <datalist id="Generation">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                  </datalist>
+                </div>
+                <div class="input-group  form-car-item">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text span-dec" id="inputGroup-sizing-default">Год от</span>
+                  </div>
+                  <input type="number" name="year-min" class="form-control" min="1900" max="2099" step="1" value="1990">
+                  <div class="input-group-prepend span-dec">
+                    <span class="input-group-text" id="inputGroup-sizing-default"><svg width="2" height="20"
+                        viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect opacity="0.5" x="0.666664" width="1" height="20" fill="#C4C4C4" />
+                      </svg>
+                      До</span>
+                  </div>
+                  <input type="number" name="year-max" class="form-control" min="1900" max="2099" step="1" value="2021">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text span-dec" id="inputGroup-sizing-default">Цена от</span>
+                  </div>
+                  <input type="number" name="price-min" class="form-control" min="0" max="9999999" step="100" value="0">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text span-dec" id="inputGroup-sizing-default"><svg width="2" height="20"
+                        viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect opacity="0.5" x="0.666664" width="1" height="20" fill="#C4C4C4" />
+                      </svg>
+                      До</span>
+                  </div>
+                  <input type="number" name="price-max" class="form-control" min="0" max="9999999" step="100"
+                    value="50000">
+                  <div class="input-group-prepend span-dec">
+                    <select class="form-control currency" name="currency">
+                      <option value="" disabled="" selected="">Валюта</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                    <div class="input-group-prepend span-dec">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Объем от</span>
+                    </div>
+                    <input type="number" name="year-min" class="form-control" min="0" max="8" step="1" value="0">
+                    <div class="input-group-prepend span-dec">
+                      <span class="input-group-text" id="inputGroup-sizing-default"><svg width="2" height="20"
+                          viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect opacity="0.5" x="0.666664" width="1" height="20" fill="#C4C4C4" />
+                        </svg>
+                        До</span>
+                    </div>
+                    <input type="number" name="year-max" class="form-control" min="0" max="8" step="1" value="8">
+                  </div>
+                </div>
+                <div class="input-group form-car-item">
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Автомат
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="options" id="option3" autocomplete="off"> Механика
+                    </label>
+                  </div>
+                  <input type="text" class="form-control form-car-item-input" list="Body" placeholder="Кузов">
+                  <datalist id="Body">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                  </datalist>
+                  <input type="text" class="form-control form-car-item-input" list="e_type" placeholder="Тип двигателя">
+                  <datalist id="e_type">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                  </datalist>
+                  <input type="text" class="form-control form-car-item-input" list="Drive" placeholder="Привод">
+                  <datalist id="Drive">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                  </datalist>
+                  <div class="setting-hide">
+                    <div class="hr"></div>
+                    <div class="setting-hide-one">
+
+                      <div class="setting-hide-one-item set-wrap">
+                        <div>
+                          <span class="setting-hide-one-item-title">Продавец</span>
+                          <input type="text" class="form-control form-car-item-input" list="Region"
+                            placeholder="Область">
+                          <datalist id="Region">
+                            <option value="Edge">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                          </datalist>
+                          <input type="text" class="form-control form-car-item-input" list="City" placeholder="Город">
+                          <datalist id="City">
+                            <option value="Edge">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                          </datalist>
+
+
+
+
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
+                            <label class="check-title" for="color4353-1">Частное лицо</label>
+                          </div>
+
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="color-2" name="color-2" value="red">
+                            <label class="check-title" for="color-2">Компания</label>
+                          </div>
+
+
+                          <div class="hr"></div>
+                          <div class="row">
+                             <div class="col-3">
+                            <span class="setting-hide-one-item-title">Мультимедиа</span>
+
+                            <div class="checkbox">
+                              <input class="custom-checkbox" type="checkbox" id="aux" name="aux" value="aux">
+                              <label class="check-title" for="aux">aux</label>
+                            </div>
+
+                            <div class="checkbox">
+                              <input class="custom-checkbox" type="checkbox" id="Bluetooth" name="Bluetooth"
+                                value="Bluetooth">
+                              <label class="check-title" for="Bluetooth">Bluetooth</label>
+                            </div>
+
+                            <div class="checkbox">
+                              <input class="custom-checkbox" type="checkbox" id="mp3" name="mp3"
+                                value="mp3">
+                              <label class="check-title" for="mp3">CD или MP3</label>
+                            </div>
+
+                            <div class="checkbox">
+                              <input class="custom-checkbox" type="checkbox" id="USB" name="USB"
+                                value="USB">
+                              <label class="check-title" for="USB">USB</label>
+                            </div>
+
+                            <div class="checkbox">
+                              <input class="custom-checkbox" type="checkbox" id="display" name="display"
+                                value="display">
+                              <label class="check-title" for="display">Мультимедийный экран</label>
+                            </div>
+
+                            <div class="checkbox">
+                              <input class="custom-checkbox" type="checkbox" id="gps" name="gps"
+                                value="gps">
+                              <label class="check-title" for="gps">Штатная навигация</label>
+                            </div>
+                            
+                          </div>
+                          <div class="col-3">
+                            <span class="setting-hide-one-item-title">Фары</span>
+                            <div class="checkbox">
+                              <input class="custom-checkbox" type="checkbox" id="xenon" name="xenon" value="xenon">
+                              <label class="check-title" for="xenon">Ксеноновые</label>
+                            </div>
+
+                            <div class="checkbox">
+                              <input class="custom-checkbox" type="checkbox" id="anti-fog" name="anti-fog" value="anti-fog">
+                              <label class="check-title" for="anti-fog">Противотуманные</label>
+                            </div>
+                          </div>
+                          </div>
+                         
+
+                        </div>
+
+
+                      </div>
+
+
+
+                      <div class="settings">
+                        <div class="settings-params">
+                          <span class="settings-param btn-set"><svg width="24" height="24" viewBox="0 0 24 24"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="0.5">
+                                <path d="M3 17H13" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                <path d="M10 7H20" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="17" cy="17" r="3" stroke="white" stroke-width="2" />
+                                <circle cx="6" cy="7" r="3" stroke="white" stroke-width="2" />
+                              </g>
+                            </svg>
+                            Все параметры</span>
+                          <span class="settings-param"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="0.5">
+                                <path
+                                  d="M3.80874 20.1498L3.05125 5H20.9487L20.1913 20.1498C20.1114 21.7464 18.7936 23 17.195 23H6.805C5.20637 23 3.88857 21.7464 3.80874 20.1498Z"
+                                  stroke="white" stroke-width="2" />
+                                <path d="M8 5H16V3C16 1.89543 15.1046 1 14 1H10C8.89543 1 8 1.89543 8 3V5Z"
+                                  stroke="white" stroke-width="2" />
+                                <path d="M1 5H23" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                <path d="M15 11V16" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                <path d="M9 11V16" stroke="white" stroke-width="2" stroke-linecap="round" />
+                              </g>
+                            </svg>
+                            Сбросить</span>
+                          <span class="settings-param"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="0.5">
+                                <path
+                                  d="M13.1408 16.5858L19.2148 20.8039C19.5464 21.0341 20 20.7968 20 20.3932V7C20 4.79086 18.2091 3 16 3H8C5.79086 3 4 4.79086 4 7V20.3932C4 20.7968 4.45364 21.0341 4.7852 20.8039L10.8592 16.5858C11.5451 16.1094 12.4549 16.1094 13.1408 16.5858Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                            </svg>
+                            Сохранить поиск</span>
+                        </div>
+
+                        <div class="settings-btn">
+                          <button id='btn-next' class="btn btn-success mb-2">ПОКАЗАТЬ <span class="count-car">22
+                              512О</span>
+                            БЪЯВЛЕНИЙ</button>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+                    </div>
+                    <div class="setting-hide-one-item"></div>
+                    <div class="setting-hide-one-item"></div>
+                  </div>
+                </div>
+                <div class="hr"></div>
+
+              </div>
+
+          </div>
+
+  </section>
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  </div>
+  </section>
+
+
+
+
+  <footer class="pt-4">
+    <div class="container">
+      <div class="hr-footer"></div>
+      <div class="top-bar  d-flex justify-content-between">
+        <div class="footer-top-left">
+          <span class='footer-title-dark'>Рассылка наших лучших предложений</span>
+          <p class='footer-dec-dark'>Подпишитесь на наши эксклюзивные предложения.</p>
+        </div>
+
+        <div class='footer-top-right'>
+          <span class='footer-title-dark'>Свяжитесь с нами 24/7</span>
+          <p class='footer-tel-dark'><a href="tel:+375291191122">+375 29 119 11 22<a></p>
+        </div>
+
+      </div>
+      <div class="mailer">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control col-lg-3 col-12" placeholder="Введите ваш Email" ">
+            <div class=" input-group-append">
+          <button class="btn btn-success" type="submit"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.2827 5L20.9998 12L14.2827 19" stroke="white" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <line x1="19.7329" y1="12.0317" x2="3.99985" y2="12.0317" stroke="white" stroke-width="2"
+                stroke-linecap="round" />
+            </svg></button>
+        </div>
+      </div>
+    </div>
+    <div id="footer-nav" class="d-flex justify-content-between">
+
+      <div class="footer-nav-item  col-lg-2,4">
+        <span class="footer-nav-item-title">Помощь и информация</span>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#" class="footer-links">mail@mail.ru</a>
+          </li>
+          <li>
+            <a href="#" class="footer-links">ООО Название компании</a>
+          </li>
+          <li>
+            <a href="#" class="footer-links">Адрес</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-nav-item  col-lg-2,4">
+        <span class="footer-nav-item-title">Подпишись на нас</span>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#" class="footer-links">Facebook</a>
+          </li>
+          <li>
+            <a href="#" class="footer-links">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-nav-item col-lg-2,4">
+        <span class="footer-nav-item-title">Наши отзывы</span>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#" class="footer-links">Google</a>
+          </li>
+          <li>
+            <a href="#" class="footer-links">Yandex</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-nav-item  col-lg-2,4">
+        <span class="footer-nav-item-title">Форма оплаты </span>
+        <div class="img-bank">
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.0833 30.0834C17.2045 30.0834 22.1667 25.1212 22.1667 19.0001C22.1667 12.8789 17.2045 7.91675 11.0833 7.91675C4.96218 7.91675 0 12.8789 0 19.0001C0 25.1212 4.96218 30.0834 11.0833 30.0834Z"
+              fill="#EA001B" />
+            <path
+              d="M26.9167 30.0834C33.0378 30.0834 38 25.1212 38 19.0001C38 12.8789 33.0378 7.91675 26.9167 7.91675C20.7955 7.91675 15.8333 12.8789 15.8333 19.0001C15.8333 25.1212 20.7955 30.0834 26.9167 30.0834Z"
+              fill="#FFA200" fill-opacity="0.8" />
+          </svg>
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M15.5327 13.0542L13.6255 24.9221H16.6739L18.5798 13.0542H15.5327ZM24.7275 17.8885C23.6623 17.3625 23.0092 17.0074 23.0092 16.4694C23.0223 15.9802 23.5615 15.479 24.7656 15.479C25.7559 15.4542 26.4838 15.6869 27.0361 15.9185L27.3127 16.042L27.7271 13.5589C27.125 13.3261 26.1703 13.0697 24.9911 13.0697C21.9808 13.0697 19.8611 14.6348 19.848 16.8733C19.8231 18.5252 21.3656 19.4418 22.5199 19.9917C23.6991 20.5558 24.1005 20.9215 24.1005 21.4227C24.0875 22.1921 23.147 22.5472 22.2695 22.5472C21.0535 22.5472 20.4004 22.3643 19.4088 21.9355L19.0074 21.7527L18.5811 24.3332C19.2972 24.6515 20.6141 24.9316 21.981 24.946C25.1801 24.946 27.2618 23.4046 27.288 21.0189C27.2984 19.7102 26.485 18.7079 24.7275 17.8885ZM35.5421 13.0909H33.1836C32.4569 13.0909 31.9046 13.3 31.59 14.0457L27.062 24.9221H30.2611L31.1422 22.5674H34.7214L35.1785 24.9316H38.0001L35.5421 13.0909ZM32.0294 20.191C32.0912 20.1969 33.2573 16.347 33.2573 16.347L34.186 20.191C34.186 20.191 32.6315 20.191 32.0294 20.191ZM11.0784 13.0542L8.09181 21.1174L7.76646 19.5272C7.21424 17.6925 5.48292 15.6988 3.55078 14.7084L6.28561 24.9103H9.51093L14.3037 13.0555H11.0784V13.0542Z"
+                fill="#2394BC" />
+              <path
+                d="M6.76166 14.5849C6.52891 13.68 5.78666 13.0697 4.77859 13.0566H0.0487106L0 13.2762C3.68963 14.1858 6.78653 16.9847 7.79122 19.6175L6.76166 14.5849Z"
+                fill="#EFC75E" />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="38" height="38" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div class="footer-nav-item  col-lg-2,4">
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#" class="footer-nav-item-title">Войти</a>
+          </li>
+          <li>
+            <a href="#" class="footer-nav-item-title">О нас</a>
+          </li>
+          <li>
+            <a href="#" class="footer-nav-item-title">FAQ</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-logo"><a href='#'><svg width="79" height="34" viewBox="0 0 79 34" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14.4229 2.95238C9.61847 13.2984 4.7851 23.6317 0 33.9873C2.29547 33.9873 4.59095 33.9873 6.88642 33.9873C7.89364 31.7873 8.88477 29.5841 9.9113 27.3937C14.7382 27.4159 19.5426 27.3778 24.3567 27.4127C25.3414 29.6159 26.3454 31.8116 27.3687 34C29.6631 33.9778 31.9543 34 34.2487 34L19.8097 2.95238C18.0205 2.95238 16.2185 2.94921 14.4229 2.95238ZM12.4921 21.6603C13.9724 18.3778 15.4655 15.0984 16.9457 11.819C16.9457 11.6254 17.2675 11.6063 17.2933 11.8C18.7671 15.0857 20.2731 18.3714 21.7502 21.6603H12.4921ZM57.7301 22.4889C57.7301 23.3524 57.0415 23.7587 55.9635 23.7587H52.4237L53.3666 21.5683H56.4333C57.1927 21.5873 57.7237 21.8413 57.7237 22.4889H57.7301ZM58.0519 18.2286C58.0519 19.0317 57.4566 19.4635 56.3625 19.4635H53.6176L54.5121 17.381H56.7647C57.566 17.381 58.0519 17.6413 58.0519 18.2286ZM78.0032 11.2444H54.274C55.4647 8.48042 56.6542 5.71429 57.8427 2.94603H50.9467C47.9304 10.1799 44.9141 17.4095 41.8978 24.6349H41.6822C38.6637 17.4095 35.6464 10.182 32.6301 2.95238H25.7436C30.1951 13.2995 34.6466 23.6434 39.0981 33.9841C40.897 33.9841 42.699 33.9841 44.5011 33.9841C45.209 32.3376 45.9181 30.6889 46.6282 29.0381H70.3574L78.0032 11.2444ZM60.8193 22.5397C60.8193 24.8857 58.6118 25.9683 55.7961 25.9683H47.9475C49.4964 22.3704 51.0453 18.7725 52.5942 15.1746H57.4984C59.9698 15.1746 61.2988 16.0825 61.2988 17.7143C61.2988 19.0095 60.5329 19.9206 59.3455 20.4159C59.7842 20.5752 60.1618 20.8653 60.4258 21.2459C60.6899 21.6264 60.8274 22.0786 60.8193 22.5397ZM65.3534 25.9683H62.364L64.2947 22.0635L61.508 15.1746H64.623L66.3414 19.4794L69.8457 15.1746H72.9896L67.0268 22.3397L65.3534 25.9683ZM41.9718 10.5079C41.7087 10.5109 41.4499 10.574 41.2156 10.6921L41.8913 2.69524L42.7312 10.6889C42.4914 10.5716 42.2265 10.5128 41.9589 10.5175L41.9718 10.5079ZM40.8358 12.146C40.8358 11.9239 40.9026 11.7067 41.0276 11.522C41.1526 11.3373 41.3304 11.1932 41.5383 11.1081C41.7463 11.0229 41.9752 11.0005 42.1961 11.0436C42.4169 11.0867 42.6199 11.1934 42.7794 11.3503C42.9388 11.5071 43.0476 11.7071 43.0919 11.9248C43.1362 12.1426 43.1141 12.3685 43.0284 12.5739C42.9426 12.7793 42.7971 12.955 42.6102 13.0789C42.4233 13.2028 42.2034 13.2692 41.9782 13.2698C41.8282 13.2715 41.6793 13.244 41.5401 13.1889C41.4008 13.1338 41.2739 13.0522 41.1666 12.9488C41.0594 12.8453 40.9738 12.722 40.9148 12.5859C40.8559 12.4498 40.8247 12.3036 40.823 12.1556L40.8358 12.146ZM41.1319 13.6984C41.3183 13.8111 41.5255 13.8859 41.7416 13.9186C41.9576 13.9513 42.1781 13.9412 42.3901 13.8889L40.9356 19.946L41.1319 13.6984ZM42.1327 1.52381H41.5116V0H42.123L42.1327 1.52381ZM47.4616 4.23492L46.9339 3.91746L47.777 2.48254L48.3079 2.8L47.4616 4.23492ZM36.2696 4.23492L35.4265 2.8L35.9542 2.48254L36.8005 3.91746L36.2696 4.23492Z"
+            fill="#00AF68" />
+        </svg></a></div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js/jQuery3.5.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+  </footer>
+</body>
+
+</html>

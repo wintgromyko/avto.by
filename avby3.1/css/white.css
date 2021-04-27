@@ -1,0 +1,65 @@
+header{
+    background-color: #fff!important;
+}
+.nav-menu{
+    background-color: #00AF68!important;
+}
+.city{
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+color: #282828;
+}
+.buy {
+    background: url(../img/Rectangle_white.jpg), #C4C4C4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#slider > li {
+    list-style-image: url(../img/Forward_white.png);
+}
+.geo{
+    filter: invert(1);
+}
+#slider-wrapper{
+    background-color:#fff;  
+}
+.h2-slider-home{
+    color: #282828;
+}
+#slider li {
+    color: #282828;
+}
+.seporator-vertic{
+    border-left: 1px solid #282828;
+}
+.filter-dark{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.filter {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* height: 650px; */
+}
+.au-info-title , .item-title{
+    color: #282828;
+}
+.item svg{
+    filter: invert(1);
+}
+footer{
+    background-color: #fff;
+}
+footer{
+    color: #282828;
+}
+.footer-title-dark , .footer-dec-dark ,.footer-tel-dark a ,.footer-nav-item-title , .footer-links{
+    color: #282828;
+}
+.form-control {
+    background: #fff!important;
+    border: 1px solid #EDF1F2!important;
+    box-sizing: border-box;
+}
