@@ -767,7 +767,7 @@ div[data-target="#collapseOne"] svg {
   /* .custom-checkbox:not(:disabled):active+label::before {
     background-color: #b3d7ff;
     border-color: #b3d7ff; */
-  }
+  /* } */
 
   /* стили для чекбокса, находящегося в фокусе */
   /* .custom-checkbox:focus+label::before {
@@ -855,4 +855,147 @@ div[data-target="#collapseOne"] svg {
     .form-check-auto div{
         margin-top: 18px;
     }
+    .cart-header-title{
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 35px;
+        color: #FFFFFF;
+    }
+    .cart-header-toggle{
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        opacity: 0.8;
+    }
+    .cart-list{
+        background: #343332;
+        /* display: flex;
+        justify-content: space-between;
+        align-items: center; */
+    }
+    .cart-body-item{
+        background: #1E1E1E;
+        border-radius: 8px;
+        padding: 20px 20px 14px 20px;
+        display: grid;
+        grid-template-columns: 187px 1fr;
+    }
+    @media screen and (max-width: 1000px)  {
+        .cart-body{
+            /* display: grid; */
+            grid-template-columns: 1fr!important;
+            /* grid-gap: 24px; */
+        }
+    }
+    .cart-body{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 24px;
+    }
+    .cart-head,.cart-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cart-body-item img{
+        border-radius: 8px;
+    }
+    .cart-boby-item-dec-title{
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 20px;
+        color: #00AF68;
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+    }
+    .page-link{
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+        opacity: 0.5;
+        background: unset;
+        border: unset;
+    }
+    .page-link:hover{
+        background-color: unset;
+        color: #00AF68;
+        opacity: 1;
+    }
+    .page-link:focus{
+        border: unset;
+        box-shadow: unset;
+        color: #00AF68;
+        opacity: 1;
+    }
+    .cart-footer{
+        transform: translateY(-5px);
+    }
+    .cart-boby-item-decription{
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+        opacity: 0.8;
+    }
+    .cart-boby-item-dec-price-us{
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+    .cart-boby-item-dec-price-br{
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    .cart-geo-from{
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.8);
     
+    }
+    .cart-geo-when{
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .cart-end-title{
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    .cart-end-date{
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        color: #00AF68;
+    }

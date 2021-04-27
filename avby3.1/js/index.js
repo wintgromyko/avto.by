@@ -1,9 +1,11 @@
-
 $(document).ready(function(){
-    jQuery('.btn-set').click(function(){
-        $(".set-wrap").toggle();
-      });
+  $(".page-link").hover(function(){
       
+    $(this).children().children().attr('stroke','#00AF68');
+    }, function(){
+        $(this).children().children().attr('stroke','#fff');
+  });
+
     $( ".switch input" ).click(function() {
         if ($(this).is(':checked')){
             $( "head" ).append('<link href="css/white.css" rel="stylesheet">');
@@ -167,4 +169,3 @@ $(document).ready(function(){
         });
      });
     })
- 
