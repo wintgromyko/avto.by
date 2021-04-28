@@ -5,6 +5,9 @@ $(document).ready(function(){
     }, function(){
         $(this).children().children().attr('stroke','#fff');
   });
+    $('.btn-set').click(function(){
+        $('.set-wrap').toggle();
+    });
 
     $( ".switch input" ).click(function() {
         if ($(this).is(':checked')){
