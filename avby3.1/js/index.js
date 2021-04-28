@@ -8,7 +8,10 @@ $(document).ready(function(){
     $('.btn-set').click(function(){
         $('.set-wrap').toggle();
     });
-
+    $('#reg').click(function(){
+        $('.login').hide();
+        $('.check_in').show();
+    });
     $( ".switch input" ).click(function() {
         if ($(this).is(':checked')){
             $( "head" ).append('<link href="css/white.css" rel="stylesheet">');

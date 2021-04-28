@@ -77,21 +77,51 @@
   </header>
  <section>
   <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="login">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <h2>Вход</h2>
       <form>
         <div class="form-group">
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваш логин или Email">
         </div>
         <div class="form-group">
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
         </div>
         <!-- <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div> -->
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Войти</button>
+      </form>
+      <div class="wat">
+        <a href="#">Забыли пароль?</a>
+      </div>
+      <div class="reg">
+        <span>Нет аккаунта?</span>
+        <button id="reg" type="button" class="btn btn-primary">Регистрация</button>
+      </div>
+    </div>
+    <div class="check_in">
+      <h2>Регистрация</h2>
+      <form>
+        
+        <div class="form-group">
+          <input type="text" class="form-control" id="fio"  placeholder="Ваше ФИО">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <input type="tel" id="phone" class="form-control" name="phone" placeholder="+375(29)-336-45-78" required>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="Password" placeholder="Пароль">
+        </div>
+        <!-- <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+        <button type="submit" class="btn btn-primary">создать аккаунт</button>
       </form>
     </div>
   </div>
@@ -105,14 +135,72 @@
   </div>
   <style>
     /* Боковое навигационное меню */
-.login{
+.check_in {
+  display: none;
+}
+.wat>a ,.reg span{
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px!important;
+  line-height: 15px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  padding: 8px 8px 8px 8px!important;
+}
+#mySidenav h2 ,.check_in h2{
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: #FFFFFF;
+}    
+.login ,.check_in{
   width: 376px;
   margin: auto;
+  
+}
+.reg button,.check_in button{
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+color: #00AF68;
+background-color: unset!important;
+border: 2px solid #00AF68!important;
 
+}
+#mySidenav button{
+background: #00AF68;
+border-radius: 8px;
+border:  #00AF68;
 }  
 #mySidenav input , #mySidenav button{
   width: 100%;
 }  
+#mySidenav input{
+  background-color: #3F3F3F;
+  border: unset;
+}
+#mySidenav input, #mySidenav button{
+  height: 48px;
+  
+}
+#mySidenav input:hover, #mySidenav button:hover{
+  /* box-shadow: 0 0 0 0.2rem rgb(0 175 104 / 25%); */
+}
+#mySidenav input::placeholder{
+  font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
+opacity: 0.5;
+}
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 ширина - изменить это с помощью JavaScript */
