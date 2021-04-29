@@ -1,4 +1,23 @@
 $(document).ready(function(){
+    function openNav() {
+        if($(document).width()<=768){
+            document.getElementById("mySidenav").style.width = "100%";
+        }else{
+            document.getElementById("mySidenav").style.width = "420px";
+            document.body.style.overflow = "hidden";
+            $('#my-owerlay').addClass('my-owerlay');
+          
+        }
+      
+      }
+      
+      /* Установите ширину боковой навигации на 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.overflow = "unset";
+        $('#my-owerlay').removeClass('my-owerlay');
+      }
+
   $(".page-link").hover(function(){
       
     $(this).children().children().attr('stroke','#00AF68');
@@ -7,6 +26,24 @@ $(document).ready(function(){
   });
     $('.btn-set').click(function(){
         $('.set-wrap').toggle();
+    });
+    $('.btn-login').click(function(){
+        openNav();
+    });
+    $('.closebtn').click(function(){
+        closeNav();
+    });
+    $('#my-owerlay').click(function(){
+        closeNav();
+    });
+    $('.back-login').click(function(){
+        $('.check_in').hide();
+        $('.recovery').hide();
+        $('.login').show();
+    });
+    $('.wat a').click(function(){
+        $('.login').hide();
+        $('.recovery').show();
     });
     $('#reg').click(function(){
         $('.login').hide();
