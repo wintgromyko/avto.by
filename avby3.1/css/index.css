@@ -829,9 +829,7 @@ div[data-target="#collapseOne"] svg {
 
 
 
-/* #vehicle2:checked+label::before {
-    background-image: url("data:image/<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'><rect width='20' height='20' rx='3' fill='#00AF68'/><path d='M6 10.1569L8.82843 12.9853L14.4853 7.32843' stroke='white' stroke-width='2' stroke-linecap='round'/></svg>");
-  } */
+
 
   .form-check-title h3{
     font-family: Source Sans Pro;
@@ -1027,3 +1025,70 @@ div[data-target="#collapseOne"] svg {
     .form-control{
         width: 100%;
     }
+#singl-wrap-bg{
+    background: #343332;
+    padding: 46px 0;
+}
+.singl-wrap {
+    /* margin: 46px 0; */
+    background: #000;
+    padding: 24px;
+    border-radius: 8px;
+}
+#name-auto-single {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+#sing-head {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+.opacity-0-5 {
+    opacity: 0.5;
+}
+#complaint{
+    color: #00AF68;
+}
+.hr-single {
+    width: 1062px;
+    height: 1px;
+    background: #F0F0F0;
+    opacity: 0.2;
+}
+
+
+
+
+
+
+
+
+#myCarousel .list-inline {
+    white-space:nowrap;
+    overflow-x:auto;
+}
+
+#myCarousel .carousel-indicators {
+    position: static;
+    left: initial;
+    width: initial;
+    margin-left: initial;
+}
+
+#myCarousel .carousel-indicators > li {
+    width: initial;
+    height: initial;
+    text-indent: initial;
+}
+
+#myCarousel .carousel-indicators > li.active img {
+    opacity: 0.7;
+}
