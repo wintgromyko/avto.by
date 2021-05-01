@@ -816,9 +816,29 @@ div[data-target="#collapseOne"] svg {
     background-color: #e9ecef;
   }
 
-
-
-
+  .singl-title {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    color: #FFFFFF;
+  }
+  .singl-title-deskript {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    color: #FFFFFF;
+  }
+.fotorama__nav-wrap {
+    margin-top: 8px;
+}
+#rates-wrap {
+    background: #3F3F3F;
+    border-radius: 8px;
+}
 
 
 
@@ -857,6 +877,9 @@ div[data-target="#collapseOne"] svg {
     @media screen and (max-width: 768px) {
         .form-check-full-name input ,.form-check-auto input{
             width: 100%;
+        }
+        #name-auto-single {
+            font-size: 20px!important;
         }
       } 
 
@@ -1058,12 +1081,29 @@ div[data-target="#collapseOne"] svg {
     color: #00AF68;
 }
 .hr-single {
-    width: 1062px;
+    width: 100%;
     height: 1px;
     background: #F0F0F0;
     opacity: 0.2;
 }
-
+.singl-description {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.singl-description-14 {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
 
 
 
