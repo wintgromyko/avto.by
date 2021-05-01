@@ -32,8 +32,33 @@
       width: 376px;
       margin: auto;
     }
-
+    #collapseOne input:hover,#collapseOne select:hover{
+      background-color: #3F3F3F;
+    }
     @media only screen and (max-width: 768px) {
+      .year,.volumes{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+      }
+      .price{
+        display: grid;
+        grid-template-columns: 20% 30% 50%;
+      }
+      .year span,.volumes span,.price span,.year input,.volumes input,.price input,.currency{
+        background: unset;
+        border: unset;
+  
+      }
+      
+      .year span,.volumes span,.price span,.year input::placeholder,.volumes input::placeholder,.price input::placeholder,input,.volumes input,.price input ,.currency{
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF!important;
+        /* opacity: 0.5; */
+      }
 
       .login,
       .check_in,
@@ -53,6 +78,22 @@
       #mySidenav h2 {
         font-size: 40px;
       }
+      .car-form-2 > div.price > div:nth-child(1) > span > svg{
+        display: none;
+      }
+      .car-form-2{
+        background: none!important;
+      }
+      .year ,.price,.volumes{
+        background: #3F3F3F;
+        border-radius: 8px;
+        max-height: 48px;
+        margin-bottom: 16px;
+      }
+      .car-form-2{
+        padding: 0 !important;
+      }
+
     }
 
     .recovery {
@@ -192,6 +233,3 @@
       opacity: 0.8;
     }
 
-    /* body {
-        overflow: hidden;
-      } */
