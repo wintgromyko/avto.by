@@ -9,6 +9,7 @@
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  <link href="css/bam.css" rel="stylesheet">
 
 
   <title>Hello, world!</title>
@@ -64,7 +65,7 @@
               <a class="nav-link" href="#">О КОМПАНИИ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
+              <a class="nav-link btn-login" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">+375 29 119 11 22</a>
@@ -76,103 +77,76 @@
     </div>
   </header>
  <section>
+   <div id="my-owerlay"></div>
   <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="login">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <h2>Вход</h2>
       <form>
         <div class="form-group">
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваш логин или Email">
         </div>
         <div class="form-group">
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
         </div>
         <!-- <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div> -->
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Войти</button>
+      </form>
+      <div class="wat">
+        <a href="#">Забыли пароль?</a>
+      </div>
+      <div class="reg">
+        <span>Нет аккаунта?</span>
+        <button id="reg" type="button" class="btn btn-primary">Регистрация</button>
+      </div>
+    </div>
+    <div class="recovery">
+      <span class="back-login"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.71729 5L3.00021 12L9.71729 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="1" y1="-1" x2="16.7331" y2="-1" transform="matrix(1 0 0 -1 3.26709 11.0317)" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+         К авторизации</span>
+      <h2>Восстановление</h2>
+      <form>
+        <div class="form-group">
+          <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Ваш Email">
+        </div>
+        <button type="submit" class="btn btn-primary">отправить письмо</button>
+      </form>
+    </div>
+    <div class="check_in">
+      <span class="back-login"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.71729 5L3.00021 12L9.71729 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="1" y1="-1" x2="16.7331" y2="-1" transform="matrix(1 0 0 -1 3.26709 11.0317)" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+         К авторизации</span>
+      <h2>Регистрация</h2>
+      <form>
+        
+        <div class="form-group">
+          <input type="text" class="form-control" id="fio"  placeholder="Ваше ФИО">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <input type="tel" id="phone" class="form-control" name="phone" placeholder="+375(29)-336-45-78" required>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="Password" placeholder="Пароль">
+        </div>
+        <!-- <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+        <button type="submit" class="btn btn-primary">создать аккаунт</button>
       </form>
     </div>
   </div>
   
-  <!-- Используйте любой элемент, чтобы открыть sidenav -->
-  <span onclick="openNav()">open</span>
-  
-  <!-- Добавьте весь контент страницы внутри этого div, если вы хотите, чтобы боковая навигация выдвигала контент страницы вправо (не используется, если вы хотите, чтобы sidenav находился сверху страницы -->
-  <div id="main">
-    ...
-  </div>
-  <style>
-    /* Боковое навигационное меню */
-.login{
-  width: 376px;
-  margin: auto;
-
-}  
-#mySidenav input , #mySidenav button{
-  width: 100%;
-}  
-.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 ширина - изменить это с помощью JavaScript */
-  position: fixed; /* Оставайтесь на месте */
-  z-index: 1; /* Оставайтесь сверху */
-  top: 0; /* Оставайтесь наверху */
-  right: 0;
-  background-color: #111; /* Фон черный*/
-  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
-  padding-top: 60px; /* Поместите контент в 60px сверху */
-  transition: 0.5s; /* 0.5 второй эффект перехода слайда в боковой навигации */
-}
-
-/* Ссылки меню навигации */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* Когда вы наводите курсор мыши на навигационные ссылки, изменяется их цвет */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-/* Положение и стиль кнопки закрытия (верхний правый угол) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* Стиль содержимого страницы - используйте это, если вы хотите сдвинуть содержимое страницы вправо при открытии боковой навигации */
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
-}
-
-/* На экранах меньшего размера, где высота меньше 450px, измените стиль sidenav (меньше отступов и меньший размер шрифта) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-  </style>
-  <script>
-    /* Установите ширину боковой навигации до 250 пикселей */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "420px";
-}
-
-/* Установите ширину боковой навигации на 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-  </script>
  </section>
 
   </div>

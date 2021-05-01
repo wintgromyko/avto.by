@@ -1,28 +1,235 @@
-.form-check-title h3{
-font-family: Source Sans Pro;
-font-style: normal;
-font-weight: 600;
-font-size: 28px;
-line-height: 35px;
-color: #FFFFFF;
-}
-.form-check-title p{
-font-family: Source Sans Pro;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-
-color: #FFFFFF;
-}
-.form-check-full-name input {
-    width: 48%;
-}
-.form-check{
-    display: none;
-}
-@media screen and (max-width: 768px) {
-    .form-check-full-name input ,.form-check-auto input{
-        width: 100%;
+    /* Боковое навигационное меню */
+    .check_in {
+      display: none;
     }
-  } 
+
+    .wat>a,
+    .reg span {
+      text-align: center;
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px !important;
+      line-height: 15px;
+      color: #FFFFFF;
+      opacity: 0.8;
+      padding: 8px 8px 8px 8px !important;
+    }
+
+    #mySidenav h2,
+    .check_in h2 {
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 60px;
+      color: #FFFFFF;
+    }
+
+    .login,
+    .check_in,
+    .recovery {
+      width: 376px;
+      margin: auto;
+    }
+    #collapseOne input:hover,#collapseOne select:hover{
+      background-color: #3F3F3F;
+    }
+    @media only screen and (max-width: 768px) {
+      .year,.volumes{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+      }
+      .price{
+        display: grid;
+        grid-template-columns: 20% 30% 50%;
+      }
+      .year span,.volumes span,.price span,.year input,.volumes input,.price input,.currency{
+        background: unset;
+        border: unset;
+  
+      }
+      
+      .year span,.volumes span,.price span,.year input::placeholder,.volumes input::placeholder,.price input::placeholder,input,.volumes input,.price input ,.currency{
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF!important;
+        /* opacity: 0.5; */
+      }
+
+      .login,
+      .check_in,
+      .recovery {
+        width: 90%;
+        margin: auto;
+      }
+
+      .cart-header-toggle {
+        display: none;
+      }
+
+      .cart-header-title {
+        font-size: 24px;
+      }
+
+      #mySidenav h2 {
+        font-size: 40px;
+      }
+      .car-form-2 > div.price > div:nth-child(1) > span > svg{
+        display: none;
+      }
+      .car-form-2{
+        background: none!important;
+      }
+      .year ,.price,.volumes{
+        background: #3F3F3F;
+        border-radius: 8px;
+        max-height: 48px;
+        margin-bottom: 16px;
+      }
+      .car-form-2{
+        padding: 0 !important;
+      }
+
+    }
+
+    .recovery {
+      display: none;
+    }
+
+    .reg {
+      margin-top: calc(100vh - 441px);
+    }
+
+    .reg button,
+    .check_in button {
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #00AF68;
+      background-color: unset !important;
+      border: 2px solid #00AF68 !important;
+
+    }
+
+    #mySidenav button {
+      background: #00AF68;
+      border-radius: 8px;
+      border: #00AF68;
+    }
+
+    #mySidenav input,
+    #mySidenav button {
+      width: 100%;
+    }
+
+    #mySidenav input {
+      background-color: #3F3F3F;
+      border: unset;
+    }
+
+    #mySidenav input,
+    #mySidenav button {
+      height: 48px;
+
+    }
+
+    #mySidenav input::placeholder {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+      opacity: 0.5;
+    }
+
+    .sidenav {
+      height: 100%;
+      /* 100% Full-height */
+      width: 0;
+      /* 0 ширина - изменить это с помощью JavaScript */
+      position: fixed;
+      /* Оставайтесь на месте */
+      z-index: 11;
+      /* Оставайтесь сверху */
+      top: 0;
+      /* Оставайтесь наверху */
+      right: 0;
+      background-color: #111;
+      /* Фон черный*/
+      overflow-x: hidden;
+      /* Отключить горизонтальную прокрутку */
+      padding-top: 60px;
+      /* Поместите контент в 60px сверху */
+      transition: 0.5s;
+      /* 0.5 второй эффект перехода слайда в боковой навигации */
+    }
+
+    /* Ссылки меню навигации */
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    /* Когда вы наводите курсор мыши на навигационные ссылки, изменяется их цвет */
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    /* Положение и стиль кнопки закрытия (верхний правый угол) */
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    /* Стиль содержимого страницы - используйте это, если вы хотите сдвинуть содержимое страницы вправо при открытии боковой навигации */
+    #main {
+      transition: margin-left .5s;
+      padding: 20px;
+    }
+
+    .back-login {
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      color: #FFFFFF;
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    /* На экранах меньшего размера, где высота меньше 450px, измените стиль sidenav (меньше отступов и меньший размер шрифта) */
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
+    .my-owerlay {
+      position: absolute;
+      width: 150vw;
+      height: 150vw;
+      margin: -300px;
+      background: #000;
+      z-index: 4;
+      opacity: 0.8;
+    }
+

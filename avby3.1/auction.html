@@ -9,6 +9,7 @@
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  <link href="css/bam.css" rel="stylesheet">
 
 
   <title>Hello, world!</title>
@@ -273,27 +274,15 @@
                     stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </div>
-              <div class="d-flex row justify-content-end pb-4">
-                <span class="nav-item">
-                  <a class="nav-link" href="#">Добавить марку
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <circle cx="12" cy="12" r="12" fill="#00AF68" />
-                      <path d="M12 7.5V16.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                      <path d="M7.5 12L16.5 12" stroke="white" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                </span>
 
-              </div>
             </h5>
           </div>
 
           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
             <section class="form-car container-fluid p-0">
               <div class="container p-0">
-                <div class="input-group form-car-item mb-3">
+                <!-- год модель поколение start-->
+                <div class="car-form-1">
                   <input type="text" class="form-control" list="brands" placeholder="Все марки">
                   <datalist id="brands">
                     <option value="Edge">
@@ -318,6 +307,107 @@
                     <option value="Opera">
                     <option value="Safari">
                   </datalist>
+                </div>
+
+                <!-- год модель поколение start-->
+                <div class="d-flex row justify-content-end pb-4">
+                  <span class="nav-item">
+                    <a class="nav-link" href="#">Добавить марку
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="12" fill="#00AF68" />
+                        <path d="M12 7.5V16.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M7.5 12L16.5 12" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </a>
+                  </span>
+
+                </div>
+                <div class="car-form-2">
+                  <div class="year">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text span-dec" id="inputGroup-sizing-default">Год от</span>
+                    </div>
+                    <input type="number" name="year-min" class="form-control" min="1900" max="2099" step="1"
+                      value="1990">
+                    <div class="input-group-prepend span-dec">
+                      <span class="input-group-text" ><svg width="2" height="20"
+                          viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect opacity="0.5" x="0.666664" width="1" height="20" fill="#C4C4C4" />
+                        </svg>
+                        До</span>
+                    </div>
+                    <input type="number" name="year-max" class="form-control" min="1900" max="2099" step="1"
+                      value="2021">
+                  </div>
+                  <div class="price">
+                    <!-- <div class="input-group-prepend">
+                        <span class="input-group-text span-dec" id="inputGroup-sizing-default">Цена от</span>
+                      </div>
+                      <input type="number" name="price-min" class="form-control" min="0" max="9999999" step="100" value="0"> -->
+                    <div class="input-group-prepend">
+                      <span class="input-group-text span-dec" ><svg width="2" height="20"
+                          viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect opacity="0.5" x="0.666664" width="1" height="20" fill="#C4C4C4" />
+                        </svg>
+                        До</span>
+                    </div>
+                    <input type="number" name="price-max" class="form-control" min="0" max="9999999" step="100"
+                      value="50000">
+                    <div class="input-group-prepend span-dec">
+                      <select class="form-control currency" name="currency">
+                        <option value="" disabled="" selected="">Валюта</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                    <div class="volumes">
+                      <div class="input-group-prepend span-dec">
+                        <span class="input-group-text" >Объем от</span>
+                      </div>
+                      <input type="number" name="year-min" class="form-control" min="0" max="8" step="1" value="0">
+                      <div class="input-group-prepend span-dec">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><svg width="2" height="20"
+                            viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.5" x="0.666664" width="1" height="20" fill="#C4C4C4" />
+                          </svg>
+                          До</span>
+                      </div>
+                      <input type="number" name="year-max" class="form-control" min="0" max="8" step="1" value="8">
+                    </div>
+                  
+                    <!-- dectop start-->
+                  <!-- <div class="input-group form-car-item mb-3"> -->
+
+
+                  <!-- <input type="text" class="form-control" list="brands" placeholder="Все марки">
+                  <datalist id="brands">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                  </datalist>
+                  <input type="text" class="form-control" list="Model" placeholder="Модель">
+                  <datalist id="Model">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                  </datalist>
+                  <input type="text" class="form-control" list="Generation" placeholder="Поколение">
+                  <datalist id="Generation">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                  </datalist> -->
                 </div>
                 <div class="input-group  form-car-item">
                   <div class="input-group-prepend">
@@ -366,6 +456,7 @@
                     </div>
                     <input type="number" name="year-max" class="form-control" min="0" max="8" step="1" value="8">
                   </div>
+                  <!-- dectop end-->
                 </div>
                 <div class="input-group form-car-item">
                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -441,59 +532,57 @@
 
                           <div class="hr"></div>
                           <div class="row">
-                             <div class="col-3">
-                            <span class="setting-hide-one-item-title">Мультимедиа</span>
+                            <div class="col-3">
+                              <span class="setting-hide-one-item-title">Мультимедиа</span>
 
-                            <div class="checkbox">
-                              <input class="custom-checkbox" type="checkbox" id="aux" name="aux" value="aux">
-                              <label class="check-title" for="aux">aux</label>
-                            </div>
+                              <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="aux" name="aux" value="aux">
+                                <label class="check-title" for="aux">aux</label>
+                              </div>
 
-                            <div class="checkbox">
-                              <input class="custom-checkbox" type="checkbox" id="Bluetooth" name="Bluetooth"
-                                value="Bluetooth">
-                              <label class="check-title" for="Bluetooth">Bluetooth</label>
-                            </div>
+                              <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="Bluetooth" name="Bluetooth"
+                                  value="Bluetooth">
+                                <label class="check-title" for="Bluetooth">Bluetooth</label>
+                              </div>
 
-                            <div class="checkbox">
-                              <input class="custom-checkbox" type="checkbox" id="mp3" name="mp3"
-                                value="mp3">
-                              <label class="check-title" for="mp3">CD или MP3</label>
-                            </div>
+                              <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="mp3" name="mp3" value="mp3">
+                                <label class="check-title" for="mp3">CD или MP3</label>
+                              </div>
 
-                            <div class="checkbox">
-                              <input class="custom-checkbox" type="checkbox" id="USB" name="USB"
-                                value="USB">
-                              <label class="check-title" for="USB">USB</label>
-                            </div>
+                              <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="USB" name="USB" value="USB">
+                                <label class="check-title" for="USB">USB</label>
+                              </div>
 
-                            <div class="checkbox">
-                              <input class="custom-checkbox" type="checkbox" id="display" name="display"
-                                value="display">
-                              <label class="check-title" for="display">Мультимедийный экран</label>
-                            </div>
+                              <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="display" name="display"
+                                  value="display">
+                                <label class="check-title" for="display">Мультимедийный экран</label>
+                              </div>
 
-                            <div class="checkbox">
-                              <input class="custom-checkbox" type="checkbox" id="gps" name="gps"
-                                value="gps">
-                              <label class="check-title" for="gps">Штатная навигация</label>
+                              <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="gps" name="gps" value="gps">
+                                <label class="check-title" for="gps">Штатная навигация</label>
+                              </div>
+
                             </div>
-                            
+                            <div class="col-3">
+                              <span class="setting-hide-one-item-title">Фары</span>
+                              <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="xenon" name="xenon" value="xenon">
+                                <label class="check-title" for="xenon">Ксеноновые</label>
+                              </div>
+
+                              <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="anti-fog" name="anti-fog"
+                                  value="anti-fog">
+                                <label class="check-title" for="anti-fog">Противотуманные</label>
+                              </div>
+                            </div>
                           </div>
-                          <div class="col-3">
-                            <span class="setting-hide-one-item-title">Фары</span>
-                            <div class="checkbox">
-                              <input class="custom-checkbox" type="checkbox" id="xenon" name="xenon" value="xenon">
-                              <label class="check-title" for="xenon">Ксеноновые</label>
-                            </div>
 
-                            <div class="checkbox">
-                              <input class="custom-checkbox" type="checkbox" id="anti-fog" name="anti-fog" value="anti-fog">
-                              <label class="check-title" for="anti-fog">Противотуманные</label>
-                            </div>
-                          </div>
-                          </div>
-                         
 
                         </div>
 
@@ -602,138 +691,149 @@
   </section>
   <section class="container-fluid cart-list">
     <div class="container">
-        <div class="cart-header">
-            <span class="cart-header-title">Найдено 22 512 аукционов</span>
-            <span class="cart-header-toggle">Сначала самые актуальные</span>
+      <div class="cart-header">
+        <span class="cart-header-title">Найдено 22 512 аукционов</span>
+        <span class="cart-header-toggle">Сначала самые актуальные</span>
+      </div>
+      <div class="cart-body">
+        <div class="cart-body-item ">
+          <img src="img/Rectangle-324.jpg" alt="">
+          <div class="cart-boby-item-dec">
+            <div class="cart-head"><span class="cart-boby-item-dec-title">Kia Sportage II</span>
+              <div class="cart-price"><span class="cart-boby-item-dec-price-br">17 732 <span
+                    class="cart-boby-item-dec-price-sinvol">Br</span><br></span>
+                <span class="cart-boby-item-dec-price-us"><span class="about">≈ </span> 6853
+                  <span class="cart-boby-item-dec-price-sinvol">$</span></span>
+              </div>
+            </div>
+
+            <p class="cart-boby-item-decription">
+              2007 г.<br>механика, 2.0 л, бензин<br>(пропан-бутан)<br>260 000 км
+            </p>
+
+            <div class="cart-footer">
+              <div class="cart-geo">
+                <span class="cart-geo-from">Минск</span>
+                <span class="cart-geo-when">вчера</span>
+              </div>
+              <div class="cart-end">
+                <span class="cart-end-title">Конец аукциона: </span>
+                <span class="cart-end-date">сегодня 12:00</span>
+              </div>
+            </div>
+
+          </div>
         </div>
-        <div class="cart-body">
-            <div class="cart-body-item ">
-                <img src="img/Rectangle-324.jpg" alt="">
-                <div class="cart-boby-item-dec">
-                    <div class="cart-head"><span class="cart-boby-item-dec-title">Kia Sportage II</span>
-                        <div class="cart-price"><span class="cart-boby-item-dec-price-br">17 732 <span class="cart-boby-item-dec-price-sinvol">Br</span><br></span>
-                            <span class="cart-boby-item-dec-price-us"><span class="about">≈ </span> 6853
-                                <span class="cart-boby-item-dec-price-sinvol">$</span></span>
-                        </div>
-                    </div>
-
-                    <p class="cart-boby-item-decription">
-                        2007 г.<br>механика, 2.0 л, бензин<br>(пропан-бутан)<br>260 000 км
-                    </p>
-
-                    <div class="cart-footer">
-                        <div class="cart-geo">
-                            <span class="cart-geo-from">Минск</span>
-                            <span class="cart-geo-when">вчера</span>
-                        </div>
-                        <div class="cart-end">
-                            <span class="cart-end-title">Конец аукциона: </span>
-                            <span class="cart-end-date">сегодня 12:00</span>
-                        </div>
-                    </div>
-
-                </div>
+        <div class="cart-body-item ">
+          <img src="img/Rectangle-324.jpg" alt="">
+          <div class="cart-boby-item-dec">
+            <div class="cart-head"><span class="cart-boby-item-dec-title">Kia Sportage II <svg width="31" height="13"
+                  viewBox="0 0 31 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="1" width="31" height="12" rx="3" fill="#00AF68"></rect>
+                  <path
+                    d="M9.9 10L7.93 3.48H9.49L10.27 6.52C10.37 6.88 10.4567 7.23 10.53 7.57C10.61 7.90333 10.7 8.25 10.8 8.61H10.84C10.9333 8.25 11.02 7.90333 11.1 7.57C11.18 7.23 11.2667 6.88 11.36 6.52L12.13 3.48H13.63L11.67 10H9.9ZM14.3266 10V3.48H15.7966V10H14.3266ZM17.3345 10V3.48H18.8445L20.5445 6.72L21.1845 8.16H21.2245C21.1911 7.81333 21.1511 7.42667 21.1045 7C21.0645 6.57333 21.0445 6.16667 21.0445 5.78V3.48H22.4445V10H20.9345L19.2345 6.75L18.5945 5.33H18.5545C18.5878 5.69 18.6245 6.07667 18.6645 6.49C18.7111 6.90333 18.7345 7.30333 18.7345 7.69V10H17.3345Z"
+                    fill="white"></path>
+                </svg></span>
+              <div class="cart-price"><span class="cart-boby-item-dec-price-br">17 732 <span
+                    class="cart-boby-item-dec-price-sinvol">Br</span><br></span>
+                <span class="cart-boby-item-dec-price-us"><span class="about">≈ </span> 6853
+                  <span class="cart-boby-item-dec-price-sinvol">$</span></span>
+              </div>
             </div>
-            <div class="cart-body-item ">
-                <img src="img/Rectangle-324.jpg" alt="">
-                <div class="cart-boby-item-dec">
-                    <div class="cart-head"><span class="cart-boby-item-dec-title">Kia Sportage II <svg width="31" height="13" viewBox="0 0 31 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect y="1" width="31" height="12" rx="3" fill="#00AF68"></rect>
-                        <path d="M9.9 10L7.93 3.48H9.49L10.27 6.52C10.37 6.88 10.4567 7.23 10.53 7.57C10.61 7.90333 10.7 8.25 10.8 8.61H10.84C10.9333 8.25 11.02 7.90333 11.1 7.57C11.18 7.23 11.2667 6.88 11.36 6.52L12.13 3.48H13.63L11.67 10H9.9ZM14.3266 10V3.48H15.7966V10H14.3266ZM17.3345 10V3.48H18.8445L20.5445 6.72L21.1845 8.16H21.2245C21.1911 7.81333 21.1511 7.42667 21.1045 7C21.0645 6.57333 21.0445 6.16667 21.0445 5.78V3.48H22.4445V10H20.9345L19.2345 6.75L18.5945 5.33H18.5545C18.5878 5.69 18.6245 6.07667 18.6645 6.49C18.7111 6.90333 18.7345 7.30333 18.7345 7.69V10H17.3345Z" fill="white"></path>
-                        </svg></span>
-                        <div class="cart-price"><span class="cart-boby-item-dec-price-br">17 732 <span class="cart-boby-item-dec-price-sinvol">Br</span><br></span>
-                            <span class="cart-boby-item-dec-price-us"><span class="about">≈ </span> 6853
-                                <span class="cart-boby-item-dec-price-sinvol">$</span></span>
-                        </div>
-                    </div>
 
-                    <p class="cart-boby-item-decription">
-                        2007 г.<br>механика, 2.0 л, бензин<br>(пропан-бутан)<br>260 000 км
-                    </p>
+            <p class="cart-boby-item-decription">
+              2007 г.<br>механика, 2.0 л, бензин<br>(пропан-бутан)<br>260 000 км
+            </p>
 
-                    <div class="cart-footer">
-                        <div class="cart-geo">
-                            <span class="cart-geo-from">Минск</span>
-                            <span class="cart-geo-when">вчера</span>
-                        </div>
-                        <div class="cart-end">
-                            <span class="cart-end-title">Конец аукциона: </span>
-                            <span class="cart-end-date">сегодня 12:00</span>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="cart-footer">
+              <div class="cart-geo">
+                <span class="cart-geo-from">Минск</span>
+                <span class="cart-geo-when">вчера</span>
+              </div>
+              <div class="cart-end">
+                <span class="cart-end-title">Конец аукциона: </span>
+                <span class="cart-end-date">сегодня 12:00</span>
+              </div>
             </div>
-            <div class="cart-body-item ">
-                <img src="img/Rectangle-324.jpg" alt="">
-                <div class="cart-boby-item-dec">
-                    <div class="cart-head"><span class="cart-boby-item-dec-title">Kia Sportage II</span>
-                        <div class="cart-price"><span class="cart-boby-item-dec-price-br">17 732 <span class="cart-boby-item-dec-price-sinvol">Br</span><br></span>
-                            <span class="cart-boby-item-dec-price-us"><span class="about">≈ </span> 6853
-                                <span class="cart-boby-item-dec-price-sinvol">$</span></span>
-                        </div>
-                    </div>
 
-                    <p class="cart-boby-item-decription">
-                        2007 г.<br>механика, 2.0 л, бензин<br>(пропан-бутан)<br>260 000 км
-                    </p>
-
-                    <div class="cart-footer">
-                        <div class="cart-geo">
-                            <span class="cart-geo-from">Минск</span>
-                            <span class="cart-geo-when">вчера</span>
-                        </div>
-                        <div class="cart-end">
-                            <span class="cart-end-title">Конец аукциона: </span>
-                            <span class="cart-end-date">сегодня 12:00</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="cart-body-item ">
-                <img src="img/Rectangle-324.jpg" alt="">
-                <div class="cart-boby-item-dec">
-                    <div class="cart-head"><span class="cart-boby-item-dec-title">Kia Sportage II</span>
-                        <div class="cart-price"><span class="cart-boby-item-dec-price-br">17 732 <span class="cart-boby-item-dec-price-sinvol">Br</span><br></span>
-                            <span class="cart-boby-item-dec-price-us"><span class="about">≈ </span> 6853
-                                <span class="cart-boby-item-dec-price-sinvol">$</span></span>
-                        </div>
-                    </div>
-
-                    <p class="cart-boby-item-decription">
-                        2007 г.<br>механика, 2.0 л, бензин<br>(пропан-бутан)<br>260 000 км
-                    </p>
-
-                    <div class="cart-footer">
-                        <div class="cart-geo">
-                            <span class="cart-geo-from">Минск</span>
-                            <span class="cart-geo-when">вчера</span>
-                        </div>
-                        <div class="cart-end">
-                            <span class="cart-end-title">Конец аукциона: </span>
-                            <span class="cart-end-date">сегодня 12:00</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="car-page">
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.9632 5L9.00002 11.9632L15.9632 18.9263" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg></a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 5L15.9632 11.9632L9 18.9263" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg></a></li>
-                  </ul>
-            </div>
+          </div>
         </div>
+        <div class="cart-body-item ">
+          <img src="img/Rectangle-324.jpg" alt="">
+          <div class="cart-boby-item-dec">
+            <div class="cart-head"><span class="cart-boby-item-dec-title">Kia Sportage II</span>
+              <div class="cart-price"><span class="cart-boby-item-dec-price-br">17 732 <span
+                    class="cart-boby-item-dec-price-sinvol">Br</span><br></span>
+                <span class="cart-boby-item-dec-price-us"><span class="about">≈ </span> 6853
+                  <span class="cart-boby-item-dec-price-sinvol">$</span></span>
+              </div>
+            </div>
+
+            <p class="cart-boby-item-decription">
+              2007 г.<br>механика, 2.0 л, бензин<br>(пропан-бутан)<br>260 000 км
+            </p>
+
+            <div class="cart-footer">
+              <div class="cart-geo">
+                <span class="cart-geo-from">Минск</span>
+                <span class="cart-geo-when">вчера</span>
+              </div>
+              <div class="cart-end">
+                <span class="cart-end-title">Конец аукциона: </span>
+                <span class="cart-end-date">сегодня 12:00</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="cart-body-item ">
+          <img src="img/Rectangle-324.jpg" alt="">
+          <div class="cart-boby-item-dec">
+            <div class="cart-head"><span class="cart-boby-item-dec-title">Kia Sportage II</span>
+              <div class="cart-price"><span class="cart-boby-item-dec-price-br">17 732 <span
+                    class="cart-boby-item-dec-price-sinvol">Br</span><br></span>
+                <span class="cart-boby-item-dec-price-us"><span class="about">≈ </span> 6853
+                  <span class="cart-boby-item-dec-price-sinvol">$</span></span>
+              </div>
+            </div>
+
+            <p class="cart-boby-item-decription">
+              2007 г.<br>механика, 2.0 л, бензин<br>(пропан-бутан)<br>260 000 км
+            </p>
+
+            <div class="cart-footer">
+              <div class="cart-geo">
+                <span class="cart-geo-from">Минск</span>
+                <span class="cart-geo-when">вчера</span>
+              </div>
+              <div class="cart-end">
+                <span class="cart-end-title">Конец аукциона: </span>
+                <span class="cart-end-date">сегодня 12:00</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="car-page">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#"><svg width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.9632 5L9.00002 11.9632L15.9632 18.9263" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#"><svg width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 5L15.9632 11.9632L9 18.9263" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
 
 
