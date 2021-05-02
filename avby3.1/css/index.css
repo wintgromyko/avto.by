@@ -944,10 +944,10 @@ div[data-target="#collapseOne"] svg {
         opacity: 0.8;
     }
     .cart-list{
-        background: #343332;
-        /* display: flex;
-        justify-content: space-between;
-        align-items: center; */
+        background: #2E2E2E;
+    }
+    .form-control:focus {
+        background: #3F3F3F;
     }
     .cart-body-item{
         background: #1E1E1E;
