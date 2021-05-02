@@ -739,7 +739,18 @@ div[data-target="#collapseOne"] svg {
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    color: #FFFfff7A;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.check-title {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.5;
 }
 
 
@@ -830,13 +841,8 @@ div[data-target="#collapseOne"] svg {
 }
 
 
-.lh {
-    line-height: 18px;
-}
-#win-wrap {
-    background: #3F3F3F;
-    border-radius: 8px;
-}
+
+
 
 
 
