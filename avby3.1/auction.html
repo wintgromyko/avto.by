@@ -406,37 +406,82 @@
                     <div class="setting-hide-one">
 
                       <div class="setting-hide-one-item set-wrap">
-                        <div>
-                          <span class="setting-hide-one-item-title">Продавец</span>
-                          <input type="text" class="form-control form-car-item-input" list="Region"
-                            placeholder="Область">
-                          <datalist id="Region">
-                            <option value="Edge">
-                            <option value="Firefox">
-                            <option value="Chrome">
-                            <option value="Opera">
-                            <option value="Safari">
-                          </datalist>
-                          <input type="text" class="form-control form-car-item-input" list="City" placeholder="Город">
-                          <datalist id="City">
-                            <option value="Edge">
-                            <option value="Firefox">
-                            <option value="Chrome">
-                            <option value="Opera">
-                            <option value="Safari">
-                          </datalist>
 
-
-
-
-                          <div class="checkbox">
-                            <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo">
-                            <label class="check-title" for="color4353-1">Частное лицо</label>
-                          </div>
-
-                          <div class="checkbox">
-                            <input class="custom-checkbox" type="checkbox" id="color-2" name="color-2" value="red">
-                            <label class="check-title" for="color-2">Компания</label>
+                          <div class="row">
+                            <div class="col-3">
+                              <span class="setting-hide-one-item-title">Продавец</span>
+                              <input type="text" class="form-control form-car-item-input" list="Region"
+                                placeholder="Область">
+                              <datalist id="Region">
+                                <option value="Edge">
+                                <option value="Firefox">
+                                <option value="Chrome">
+                                <option value="Opera">
+                                <option value="Safari">
+                              </datalist>
+                              <input type="text" class="form-control form-car-item-input" list="City" placeholder="Город">
+                              <datalist id="City">
+                                <option value="Edge">
+                                <option value="Firefox">
+                                <option value="Chrome">
+                                <option value="Opera">
+                                <option value="Safari">
+                              </datalist>
+                              <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="private-person" name="private-person" value="private-person">
+                                <label class="check-title" for="private-person">Частное лицо</label>
+                              </div>
+                              <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="company" name="company" value="company">
+                                <label class="check-title" for="company">Компания</label>
+                              </div>
+                            </div>
+                            <div class="col-3">
+                              <span class="setting-hide-one-item-title">Состояние</span>
+                              <input type="text" class="form-control form-car-item-input" list="condition" placeholder="Состояние">
+                              <datalist id="condition">
+                                <option value="Edge">
+                                <option value="Firefox">
+                                <option value="Chrome">
+                                <option value="Opera">
+                                <option value="Safari">
+                              </datalist>
+                              <input type="text" class="form-control form-car-item-input" list="Mileage" placeholder="Пробег, км">
+                              <datalist id="Mileage">
+                                <option value="Edge">
+                                <option value="Firefox">
+                                <option value="Chrome">
+                                <option value="Opera">
+                                <option value="Safari">
+                              </datalist>
+                            </div>
+                            <div class="col-3">
+                              <span class="setting-hide-one-item-title">Объявления</span>
+                              <input type="text" class="form-control form-car-item-input" list="City" placeholder="Город">
+                              <datalist id="City">
+                                <option value="Edge">
+                                <option value="Firefox">
+                                <option value="Chrome">
+                                <option value="Opera">
+                                <option value="Safari">
+                              </datalist>
+                              <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="with-video" name="with-video" value="with-video">
+                                <label class="check-title" for="with-video">С видео</label>
+                              </div>
+                              <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="VAT" name="VAT" value="VAT">
+                                <label class="check-title" for="VAT">Цена с НДС</label>
+                              </div>
+                              <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="exchange" name="exchange" value="exchange">
+                                <label class="check-title" for="exchange">Возможен обмен</label>
+                              </div>
+                              <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="VIN" name="VIN" value="VIN">
+                                <label class="check-title" for="VIN">VIN проверен</label>
+                              </div>
+                            </div>
                           </div>
                           <div class="hr"></div>
                           <div class="row">
@@ -467,8 +512,8 @@
                             <div class="col-3">
                               <span class="setting-hide-one-item-title">Системы безопасности</span>
                               <div class="checkbox">
-                                <input class="custom-checkbox" type="checkbox" id="abs" name="abs" value="abs">
-                                <label class="check-title" for="abs">ABS</label>
+                                <input class="custom-checkbox" type="checkbox" id="ABS" name="ABS" value="ABS">
+                                <label class="check-title" for="ABS">ABS</label>
                               </div>
                               <div class="checkbox">
                                 <input class="custom-checkbox" type="checkbox" id="eps" name="eps" value="eps">
