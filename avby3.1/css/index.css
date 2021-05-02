@@ -730,7 +730,6 @@ div[data-target="#collapseOne"] svg {
 }
 .setting-hide-one-item-title {
     background: unset!important;
-    padding-bottom: 16px;
 }
 
 .check-title {
@@ -741,7 +740,14 @@ div[data-target="#collapseOne"] svg {
     line-height: 20px;
     color: #FFFfff7A;
 }
-
+#vin-verified{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #00AF68;
+}
 
 .custom-checkbox {
     position: absolute;
@@ -836,6 +842,31 @@ div[data-target="#collapseOne"] svg {
 #win-wrap {
     background: #3F3F3F;
     border-radius: 8px;
+    width: 250px;
+}
+.lot-details-title{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.list-desk li {
+    list-style-type: none;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin: 12px 0;
+}
+.list-desk {
+    margin-left: 0; 
+    padding-left: 0;
 }
 
 
@@ -1047,7 +1078,7 @@ div[data-target="#collapseOne"] svg {
     padding: 46px 0;
 }
 .singl-wrap {
-    /* margin: 46px 0; */
+    margin-bottom: 60px;
     background: #000;
     padding: 24px;
     border-radius: 8px;
