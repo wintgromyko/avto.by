@@ -1,4 +1,76 @@
-    /* Боковое навигационное меню */
+.add-auction{
+  background-color: #2E2E2E;
+}
+.add-auction .container{
+  padding-top: 48px;
+  padding-bottom: 64px;
+}
+.messages{
+  background-color: #1E1E1E;
+  border-radius: 8px;
+  padding: 19px 24px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 31px;
+}
+.nav-block .row{
+  margin-bottom: 24px;
+  gap: 24px;
+}
+.nav-block-item{
+  background-color: #1E1E1E;
+  border-radius: 8px;
+  padding: 10px 34px;
+
+}
+@media screen and (min-width: 768px){
+  .w-47{
+  width: 47%;
+}
+.w-22{
+  width: 22%;
+}
+}
+.nav-block-item svg:hover {
+  fill: #fff;
+}
+
+.nav-block h3{
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.nav-block-item span{
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.nav-block h3{
+  margin-bottom: 16px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.add-auction h2{
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+   /* Боковое навигационное меню */
     .check_in {
       display: none;
     }
@@ -35,7 +107,21 @@
     #collapseOne input:hover,#collapseOne select:hover{
       background-color: #3F3F3F;
     }
+    @media only screen and (min-width: 768px){
+      .navbar-toggler{
+        display: none;
+      }
+    }
     @media only screen and (max-width: 768px) {
+      .title h1{
+        font-size: 40px;
+      }
+      .form-buy{
+        margin-top: 100px!important;
+      }
+      #geo-block{
+        display: none!important;
+      }
       .year,.volumes{
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
