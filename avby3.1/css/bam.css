@@ -104,9 +104,7 @@
       width: 376px;
       margin: auto;
     }
-    #collapseOne input:hover,#collapseOne select:hover{
-      background-color: #3F3F3F;
-    }
+
     @media only screen and (min-width: 768px){
       .navbar-toggler{
         display: none;
@@ -214,11 +212,11 @@
     #mySidenav button {
       width: 100%;
     }
-
+/* 
     #mySidenav input {
       background-color: #3F3F3F;
       border: unset;
-    }
+    } */
 
     #mySidenav input,
     #mySidenav button {
@@ -318,4 +316,13 @@
       z-index: 4;
       opacity: 0.8;
     }
+    .form-buy .cart-list{
+      background: #fff;
+  }
+  .form-buy .form-control:focus {
+      background: #fff;
+  }
+  .form-buy .form-control {
 
+    color: #495057!important;
+  }
