@@ -273,8 +273,8 @@
                     stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </div>
-              <span class="singl-title d-md-none">Поиск по параметрам</span>
-              <div class="d-flex row justify-content-start justify-content-md-end pb-4">
+              
+              <div class="d-none d-md-flex row justify-content-start justify-content-md-end pb-4">
                 <span class="nav-item pl-0">
                   <a class="nav-link" href="#">Добавить марку
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -294,9 +294,10 @@
           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
             <section class="form-car container-fluid p-0">
               <div class="container p-0">
-                <div class="d-flex row input-group form-car-item mb-3">
+                <span class="singl-title d-md-none mt-3">Поиск по параметрам</span>
+                <div id="auc-wrap-parametr-one" class="d-flex row input-group form-car-item mb-md-3 ml-0">
 
-                  <input type="text" class="form-control col-12" list="brands" placeholder="Все марки">
+                  <input type="text" class="form-control col-12 param-set-auk-btn" list="brands" placeholder="Все марки">
                   <datalist id="brands">
                     <option value="Edge">
                     <option value="Firefox">
@@ -305,7 +306,7 @@
                     <option value="Safari">
                   </datalist>
 
-                  <input type="text" class="form-control col-12" list="Model" placeholder="Модель">
+                  <input type="text" class="form-control col-12 param-set-auk-btn" list="Model" placeholder="Модель">
                   <datalist id="Model">
                     <option value="Edge">
                     <option value="Firefox">
@@ -314,7 +315,7 @@
                     <option value="Safari">
                   </datalist>
 
-                  <input type="text" class="form-control col-12" list="Generation" placeholder="Поколение">
+                  <input type="text" class="form-control col-12 param-set-auk-btn" list="Generation" placeholder="Поколение">
                   <datalist id="Generation">
                     <option value="Edge">
                     <option value="Firefox">
@@ -326,46 +327,71 @@
                 </div>
 
                 
-                <div class="input-group  form-car-item">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text span-dec" id="inputGroup-sizing-default">Год от</span>
-                  </div>
-                  <input type="number" name="year-min" class="form-control" min="1900" max="2099" step="1" value="1990">
-                  <div class="input-group-prepend span-dec">
-                    <span class="input-group-text" id="inputGroup-sizing-default"><svg width="2" height="20"
-                        viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect opacity="0.5" x="0.666664" width="1" height="20" fill="#C4C4C4" />
+
+                <div class="d-flex d-md-none row justify-content-start">
+                  <span class="nav-item pl-0 mb-2">
+                    <a class="nav-link" href="#">Добавить марку
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="12" fill="#00AF68" />
+                        <path d="M12 7.5V16.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M7.5 12L16.5 12" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
                       </svg>
-                      До</span>
-                  </div>
-                  <input type="number" name="year-max" class="form-control" min="1900" max="2099" step="1" value="2021">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text span-dec" id="inputGroup-sizing-default">Цена от</span>
-                  </div>
-                  <input type="number" name="price-min" class="form-control" min="0" max="9999999" step="100" value="0">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text span-dec" id="inputGroup-sizing-default"><svg width="2" height="20"
-                        viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect opacity="0.5" x="0.666664" width="1" height="20" fill="#C4C4C4" />
-                      </svg>
-                      До</span>
-                  </div>
-                  <input type="number" name="price-max" class="form-control" min="0" max="9999999" step="100"
-                    value="50000">
-                  <div class="input-group-prepend span-dec">
-                    <select class="form-control currency" name="currency">
-                      <option value="" disabled="" selected="">Валюта</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
+                    </a>
+                  </span>
+  
+                </div>
+
+
+                <div id="#auc-wrap-parametr-two " class="row">
+                  <div class="input-group  form-car-item col-12 col-md-4 pr-md-0">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text span-dec" id="">Год от</span>
+                    </div>
+                    <input type="number" name="year-min" class="form-control" min="1900" max="2099" step="1" value="1990">
                     <div class="input-group-prepend span-dec">
-                      <span class="input-group-text" id="inputGroup-sizing-default">Объем от</span>
+                      <span class="input-group-text" id=""><svg width="2" height="20"
+                          viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect opacity="0.5" x="0.666664" width="1" height="20" fill="#C4C4C4" />
+                        </svg>
+                        До</span>
+                    </div>
+                    <input type="number" name="year-max" class="form-control" min="1900" max="2099" step="1" value="2021">
+                  </div>
+                  <div class="input-group  form-car-item col-12 col-md-4 p-md-0">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text span-dec" id="">Цена от</span>
+                    </div>
+                    <input type="number" name="price-min" class="form-control" min="0" max="9999999" step="100" value="0">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text span-dec" id=""><svg width="2" height="20"
+                          viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect opacity="0.5" x="0.666664" width="1" height="20" fill="#C4C4C4" />
+                        </svg>
+                        До</span>
+                    </div>
+                    <input type="number" name="price-max" class="form-control" min="0" max="9999999" step="100"
+                      value="50000">
+
+                      <div class="input-group-prepend span-dec">
+                        <select class="form-control currency" name="currency">
+                          <option value="" disabled="" selected="">Валюта</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                        </div>
+
+                  </div>
+                  <div class="input-group  form-car-item col-12 col-md-4 pl-md-0">
+                    <div class="input-group-prepend span-dec">
+                      <span class="input-group-text" id="">Объем от</span>
                     </div>
                     <input type="number" name="year-min" class="form-control" min="0" max="8" step="1" value="0">
                     <div class="input-group-prepend span-dec">
-                      <span class="input-group-text" id="inputGroup-sizing-default"><svg width="2" height="20"
+                      <span class="input-group-text" id=""><svg width="2" height="20"
                           viewBox="0 0 2 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect opacity="0.5" x="0.666664" width="1" height="20" fill="#C4C4C4" />
                         </svg>
@@ -374,16 +400,19 @@
                     <input type="number" name="year-max" class="form-control" min="0" max="8" step="1" value="8">
                   </div>
                 </div>
-                <div class="input-group form-car-item">
-                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-secondary active">
+
+
+                
+                <div id="auc-wrap-parametr-three" class="input-group form-car-item pt-md-4">
+                  <div class="btn-group btn-group-toggle d-none d-md-flex" data-toggle="buttons">
+                    <label class="btn btn-secondary active d-none d-md-flex">
                       <input type="radio" name="options" id="option1" autocomplete="off" checked> Автомат
                     </label>
-                    <label class="btn btn-secondary">
+                    <label class="btn btn-secondary ">
                       <input type="radio" name="options" id="option3" autocomplete="off"> Механика
                     </label>
                   </div>
-                  <input type="text" class="form-control form-car-item-input" list="Body" placeholder="Кузов">
+                  <input type="text" class="form-control form-car-item-input d-none d-md-flex" list="Body" placeholder="Кузов">
                   <datalist id="Body">
                     <option value="Edge">
                     <option value="Firefox">
@@ -391,7 +420,7 @@
                     <option value="Opera">
                     <option value="Safari">
                   </datalist>
-                  <input type="text" class="form-control form-car-item-input" list="e_type" placeholder="Тип двигателя">
+                  <input type="text" class="form-control form-car-item-input d-none d-md-flex" list="e_type" placeholder="Тип двигателя">
                   <datalist id="e_type">
                     <option value="Edge">
                     <option value="Firefox">
@@ -399,7 +428,7 @@
                     <option value="Opera">
                     <option value="Safari">
                   </datalist>
-                  <input type="text" class="form-control form-car-item-input" list="Drive" placeholder="Привод">
+                  <input type="text" class="form-control form-car-item-input d-none d-md-flex" list="Drive" placeholder="Привод">
                   <datalist id="Drive">
                     <option value="Edge">
                     <option value="Firefox">
@@ -408,15 +437,15 @@
                     <option value="Safari">
                   </datalist>
                   <div class="setting-hide">
-                    <div class="hr"></div>
+                    <div class="hr d-none d-md-block"></div>
                     <div class="setting-hide-one">
 
                       <div class="setting-hide-one-item set-wrap">
 
                           <div class="row">
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                               <span class="setting-hide-one-item-title">Продавец</span>
-                              <input type="text" class="form-control form-car-item-input" list="Region"
+                              <input type="text" class="form-control form-car-item-input mt-2 mt-m" list="Region"
                                 placeholder="Область">
                               <datalist id="Region">
                                 <option value="Edge">
@@ -442,9 +471,9 @@
                                 <label class="check-title" for="company">Компания</label>
                               </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                               <span class="setting-hide-one-item-title">Состояние</span>
-                              <input type="text" class="form-control form-car-item-input" list="condition" placeholder="Состояние">
+                              <input type="text" class="form-control form-car-item-input mt-2" list="condition" placeholder="Состояние">
                               <datalist id="condition">
                                 <option value="Edge">
                                 <option value="Firefox">
@@ -461,9 +490,9 @@
                                 <option value="Safari">
                               </datalist>
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                               <span class="setting-hide-one-item-title">Объявления</span>
-                              <input type="text" class="form-control form-car-item-input" list="City" placeholder="Город">
+                              <input type="text" class="form-control form-car-item-input mt-2" list="City" placeholder="Город">
                               <datalist id="City">
                                 <option value="Edge">
                                 <option value="Firefox">
@@ -489,11 +518,11 @@
                               </div>
                             </div>
                           </div>
-                          <div class="hr"></div>
+                          <div class="hr d-none d-md-block"></div>
                           <div class="row">
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                               <span class="setting-hide-one-item-title">Экстерьер</span>
-                              <input type="text" class="form-control form-car-item-input" list="body-color"
+                              <input type="text" class="form-control form-car-item-input mt-2" list="body-color"
                                 placeholder="Цвет кузова">
                               <datalist id="body-color">
                                 <option value="Edge">
@@ -515,9 +544,9 @@
                                 <label class="check-title" for="towbar">Фаркоп</label>
                               </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                               <span class="setting-hide-one-item-title">Системы безопасности</span>
-                              <div class="checkbox">
+                              <div class="checkbox mt-2">
                                 <input class="custom-checkbox" type="checkbox" id="ABS" name="ABS" value="ABS">
                                 <label class="check-title" for="ABS">ABS</label>
                               </div>
@@ -538,9 +567,9 @@
                                 <label class="check-title" for="signaling">Сигнализация</label>
                               </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                               <span class="setting-hide-one-item-title">Системы помощи</span>
-                              <div class="checkbox">
+                              <div class="checkbox mt-2">
                                 <input class="custom-checkbox" type="checkbox" id="rain-sensor" name="rain-sensor" value="rain-sensor">
                                 <label class="check-title" for="rain-sensor">Датчик дождя</label>
                               </div>
@@ -558,9 +587,9 @@
                                   на зеркалах</label>
                               </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                               <span class="setting-hide-one-item-title">Подушки</span>
-                              <div class="checkbox">
+                              <div class="checkbox mt-2">
                                 <input class="custom-checkbox" type="checkbox" id="Front" name="Front" value="Front">
                                 <label class="check-title" for="Front">Передние</label>
                               </div>
@@ -574,11 +603,11 @@
                               </div>
                             </div>
                           </div>
-                          <div class="hr"></div>
+                          <div class="hr d-none d-md-block"></div>
                           <div class="row">
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                               <span class="setting-hide-one-item-title">Интерьер</span>
-                              <input type="text" class="form-control form-car-item-input" list="color"
+                              <input type="text" class="form-control form-car-item-input mt-2" list="color"
                                 placeholder="Цвет салона">
                               <datalist id="color">
                                 <option value="Edge">
@@ -605,9 +634,9 @@
                                 <label class="check-title" for="Luke">Люк</label>
                               </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                               <span class="setting-hide-one-item-title">Комфорт</span>
-                              <div class="checkbox">
+                              <div class="checkbox mt-2">
                                 <input class="custom-checkbox" type="checkbox" id="autostart" name="autostart"
                                   value="autostart">
                                 <label class="check-title" for="autostart">Автозапуск двигателя</label>
@@ -641,9 +670,9 @@
                                   стеклоподъёмники</label>
                               </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                               <span class="setting-hide-one-item-title">Обогрев</span>
-                              <div class="checkbox">
+                              <div class="checkbox mt-2">
                                 <input class="custom-checkbox" type="checkbox" id="seats" name="seats" value="seats">
                                 <label class="check-title" for="seats">Сидений</label>
                               </div>
@@ -666,9 +695,9 @@
                                 <label class="check-title" for="heater">Автономный отопитель</label>
                               </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                               <span class="setting-hide-one-item-title">Климат</span>
-                              <div class="checkbox">
+                              <div class="checkbox mt-2">
                                 <input class="custom-checkbox" type="checkbox" id="climate-control"
                                   name="climate-control" value="climate-control">
                                 <label class="check-title" for="climate-control">Климат-контроль</label>
@@ -680,12 +709,12 @@
                               </div>
                             </div>
                           </div>
-                          <div class="hr"></div>
+                          <div class="hr d-none d-md-block"></div>
                           <div class="row">
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3">
                               <span class="setting-hide-one-item-title">Мультимедиа</span>
 
-                              <div class="checkbox">
+                              <div class="checkbox mt-2">
                                 <input class="custom-checkbox" type="checkbox" id="aux" name="aux" value="aux">
                                 <label class="check-title" for="aux">aux</label>
                               </div>
@@ -718,9 +747,9 @@
                               </div>
 
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-md-6 col-lg-3"">
                               <span class="setting-hide-one-item-title">Фары</span>
-                              <div class="checkbox">
+                              <div class="checkbox mt-2">
                                 <input class="custom-checkbox" type="checkbox" id="xenon" name="xenon" value="xenon">
                                 <label class="check-title" for="xenon">Ксеноновые</label>
                               </div>
@@ -730,8 +759,37 @@
                                   value="anti-fog">
                                 <label class="check-title" for="anti-fog">Противотуманные</label>
                               </div>
+
+                              <div class="settings-btn d-block d-md-none"> <button id='btn-next' class="btn btn-success mb-2">ПОКАЗАТЬ <span class="count-car">22 512О</span> БЪЯВЛЕНИЙ</button> </div>
+
                             </div>
                           </div>
+
+
+
+
+ 
+
+<script>
+                          var position = window.pageYOffset;
+
+$(window).on('scroll', function () {
+    position = window.pageYOffset;
+    if(position > 150) {
+        $('#div').css({ 'top': position + 'px' });
+    } 
+});
+</script>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -743,8 +801,8 @@
 
 
 
-                      <div class="settings">
-                        <div class="settings-params">
+                      <div id="" class="settings">
+                        <div class="settings-params row m-0">
                           <span class="settings-param btn-set"><svg width="24" height="24" viewBox="0 0 24 24"
                               fill="none" xmlns="http://www.w3.org/2000/svg">
                               <g opacity="0.5">
@@ -755,7 +813,7 @@
                               </g>
                             </svg>
                             Все параметры</span>
-                          <span class="settings-param"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          <span class="settings-param d-none d-md-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <g opacity="0.5">
                                 <path
@@ -769,7 +827,7 @@
                               </g>
                             </svg>
                             Сбросить</span>
-                          <span class="settings-param"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          <span class="settings-param d-none d-md-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <g opacity="0.5">
                                 <path
@@ -778,9 +836,18 @@
                               </g>
                             </svg>
                             Сохранить поиск</span>
+                            <span class="settings-param d-flex d-md-none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="0.5">
+                                <path
+                                  d="M13.1408 16.5858L19.2148 20.8039C19.5464 21.0341 20 20.7968 20 20.3932V7C20 4.79086 18.2091 3 16 3H8C5.79086 3 4 4.79086 4 7V20.3932C4 20.7968 4.45364 21.0341 4.7852 20.8039L10.8592 16.5858C11.5451 16.1094 12.4549 16.1094 13.1408 16.5858Z"
+                                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                            </svg>
+                            Сохранить</span>
                         </div>
 
-                        <div class="settings-btn">
+                        <div class="settings-btn d-none d-md-block">
                           <button id='btn-next' class="btn btn-success mb-2">ПОКАЗАТЬ <span class="count-car">22
                               512О</span>
                             БЪЯВЛЕНИЙ</button>
@@ -798,7 +865,7 @@
                     <div class="setting-hide-one-item"></div>
                   </div>
                 </div>
-                <div class="hr mb-0"></div>
+                <div class="hr mb-0 d-none d-md-block"></div>
 
               </div>
 
