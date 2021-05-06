@@ -487,3 +487,15 @@ opacity: 0.8;
 .radio-color-input{
   display: grid;
 }
+.add-foto-title{
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+.add-foto{
+  background-image: url(/avby3.1/img/Rectangle326.jpg);
+  background-size: cover;
+}
