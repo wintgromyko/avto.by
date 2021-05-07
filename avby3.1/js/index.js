@@ -14,11 +14,9 @@ $(document).ready(function () {
     
     $(document).scroll(function(){
         if ($(document).width() <= 768) {
-        if($(document).scrollTop() >= $('.settings').offset().top-$(window).height()){
-            console.log('-');
+        if($(document).scrollTop() >= $('.settings').offset().top-$(window).height() || $(document).scrollTop() <=1100){
             $('.btn-show').removeClass('btn-fixed');
         }else{
-            console.log('+');
             $('.btn-show').addClass('btn-fixed');
         }
         }
