@@ -730,11 +730,6 @@
                 value="gps">
               <label class="check-title" for="conditioner">Кондиционер</label>
             </div>
-            <span class="setting-hide-one-item-title">Фары</span>
-            <div class="checkbox mt-2">
-              <input class="custom-checkbox" type="checkbox" id="xenon" name="xenon" value="xenon">
-              <label class="check-title" for="xenon">Ксеноновые</label>
-            </div>
 
             <div class="checkbox">
               <input class="custom-checkbox" type="checkbox" id="anti-fog" name="anti-fog"
@@ -881,9 +876,12 @@
           </defs>
           </svg>
           </span>
-          <p>Видео привлекает внимание и повышет шансы на продажу.</p>
+          <div class="video-text">
+            <p>Видео привлекает внимание и повышет шансы на продажу.</p>
           <p> Снимите ролик на телефон и загрузите на YouTubeю. Мы опубликуем</p>
-           <p></p> его после проверки модератора.</p>
+           <p> его после проверки модератора.</p>
+          </div>
+          
             <div class="input">
               <input type="text" class="form-control form-car-item-input" placeholder="Ссылка на видео">
             </div>
@@ -892,13 +890,27 @@
       <div class="hr"></div>
       <div class="description-price">
         <span class="description-price-title">Опесание и цена</span>
-        <div class="form-group">
-          <label for=""></label>
-          <textarea class="form-control col-6" id="" rows="3"  placeholder="Описание вашего объявления"></textarea>
+        <div class="description-price-btn">
+          <div class="form-group">
+            <label for=""></label>
+            <textarea class="form-control col-6" id="" rows="3"  placeholder="Описание вашего объявления"></textarea>
+          </div>
+          <div class="description-price-input">
+            <input type="number" class="form-control form-car-item-input"  placeholder="Цена">
+            <div class="input-group-prepend span-dec">
+            <select class="form-control currency" name="currency">
+              <option value="" disabled="" selected="">Валюта</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            </div>
+          </div>
+          
         </div>
-        <div class="description-price-input">
-          <input type="number" class="form-control form-car-item-input"  placeholder="Цена">
-        </div>
+        
+          <div class=""> <button id='' class="btn btn-success mb-2">Добавить объявление</div>
         
 
       </div>
