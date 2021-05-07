@@ -492,8 +492,12 @@ opacity: 0.5;
     .buy{
         padding-bottom: 32px;
     }
-    .title h1{
-        /* display: none; */
+    .settings-param {
+        margin-right: 0!important;
+    }
+    #btn-save {
+        position: absolute;
+        right: 6px;
     }
     .title{
         height: 32px;
@@ -508,6 +512,9 @@ opacity: 0.5;
   .nav-menu {
     background-color: #1E1E1E;
     
+}
+#prew-mob-btn {
+    width: -webkit-fill-available!important;
 }
 
 #navbarSupportedContent > ul > li > a {

@@ -773,7 +773,7 @@
                                 <label class="check-title" for="anti-fog">Противотуманные</label>
                               </div>
 
-                              <div class="settings-btn d-block d-md-none"> <button id='btn-next' class="btn btn-success mb-2">ПОКАЗАТЬ <span class="count-car">22 512О</span> БЪЯВЛЕНИЙ</button> </div>
+                              <div class="settings-btn d-block d-md-none"> <button id='prew-mob-btn' class="btn btn-success mb-2">ПОКАЗАТЬ <span class="count-car">22 512О</span> БЪЯВЛЕНИЙ</button> </div>
 
                             </div>
                           </div>
@@ -783,16 +783,6 @@
 
  
 
-<script>
-                          var position = window.pageYOffset;
-
-$(window).on('scroll', function () {
-    position = window.pageYOffset;
-    if(position > 150) {
-        $('#div').css({ 'top': position + 'px' });
-    } 
-});
-</script>
 
 
 
@@ -849,7 +839,7 @@ $(window).on('scroll', function () {
                               </g>
                             </svg>
                             Сохранить поиск</span>
-                            <span class="settings-param d-flex d-md-none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            <span  id="btn-save" class="settings-param d-flex d-md-none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
                               <g opacity="0.5">
                                 <path
@@ -888,35 +878,6 @@ $(window).on('scroll', function () {
 
   </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   </div>
   </div>
@@ -1046,6 +1007,10 @@ $(window).on('scroll', function () {
 
           </div>
         </div>
+
+
+        <div class="settings-btn d-block d-md-none"> <button id='prew-mob-btn' class="btn btn-success">ПОКАЗАТЬ ЕЩЁ</button> </div>
+
         <div class="car-page">
           <ul class="pagination">
             <li class="page-item"><a class="page-link" href="#"><svg width="24" height="24" viewBox="0 0 24 24"
