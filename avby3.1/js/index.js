@@ -1,6 +1,7 @@
 $(document).ready(function () {
     function openNav() {
         if ($(document).width() <= 768) {
+            
             document.getElementById("mySidenav").style.width = "100%";
         } else {
             document.getElementById("mySidenav").style.width = "420px";
@@ -10,7 +11,19 @@ $(document).ready(function () {
         }
 
     }
-
+    
+    $(document).scroll(function(){
+        if ($(document).width() <= 768) {
+        if($(document).scrollTop() >= $('.settings').offset().top-$(window).height()){
+            console.log('-');
+            $('.btn-show').removeClass('btn-fixed');
+        }else{
+            console.log('+');
+            $('.btn-show').addClass('btn-fixed');
+        }
+        }
+        });
+        
     /* Установите ширину боковой навигации на 0 */
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
@@ -31,15 +44,15 @@ $(document).ready(function () {
         $('.model-title').text(model);
         $('.car-model').append('<div class="hr"></div>');
         $('input[name="model"]').val(model);
-        $('.year').show();
+        $('.years').show();
     });
-    $('.year a').click(function (e) {
+    $('.years a').click(function (e) {
         var year = e.target.textContent;
         $('.years-list').hide();
         $('.year-title').addClass('colorGreen');
-        $('.year path').attr('d','M4 12.3137L9.65685 17.9706L20.9706 6.65687');
+        $('.years path').attr('d','M4 12.3137L9.65685 17.9706L20.9706 6.65687');
         $('.year-title').text(year);
-        $('.year').append('<div class="hr"></div>');
+        $('.years').append('<div class="hr"></div>');
         $('input[name="year"]').val(year);
         $('.parameters').show();
     });

@@ -496,6 +496,11 @@ opacity: 0.8;
   color: #FFFFFF;
 }
 .add-foto{
-  background-image: url(/avby3.1/img/Rectangle326.jpg);
+  background-image: url(../img/Rectangle326.jpg);
   background-size: cover;
+}
+.btn-fixed{
+  position: fixed;
+  bottom: 20px;
+  display: block;
 }
