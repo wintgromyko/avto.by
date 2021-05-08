@@ -13,7 +13,7 @@ $(document).ready(function () {
     }
     
     $(document).scroll(function(){
-        if ($(document).width() <= 768) {
+        if ($(document).width() <= 768 && $('.settings').html() !=undefined) {
         if($(document).scrollTop() >= $('.settings').offset().top-$(window).height() || $(document).scrollTop() <=1100){
             $('.btn-show').removeClass('btn-fixed');
         }else{
@@ -53,6 +53,14 @@ $(document).ready(function () {
         $('.years').append('<div class="hr"></div>');
         $('input[name="year"]').val(year);
         $('.parameters').show();
+        $('.video-wrap').show();
+        $('.add-foto').show();
+        $('.equipment').show();
+        $('.description-price').show();
+        $('.hr-hide').show();
+        $('.vin').show();
+        $('.color-car').show();
+        
     });
     $('#a-car').click(function () {
         $('input[name="transport"][value="a-car"]').prop('checked', true);
