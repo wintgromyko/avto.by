@@ -513,6 +513,9 @@ opacity: 0.5;
     background-color: #1E1E1E;
     
 }
+.dropdown-toggle::after {
+    display: none;
+}
 #prew-mob-btn {
     width: -webkit-fill-available!important;
 }
@@ -1038,8 +1041,8 @@ div[data-target="#collapseOne"] svg {
     }
     .cart-body{
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-gap: 24px;
+        grid-template-columns: 49% 49%;
+        grid-gap: 2%;
     }
     .cart-head,.cart-footer{
         display: flex;
