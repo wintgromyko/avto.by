@@ -2,14 +2,15 @@
   background-color: #2E2E2E;
 }
 .add-auction .container{
-  padding-top: 48px;
-  padding-bottom: 64px;
+  /* padding-top: 48px;
+  padding-bottom: 64px; */
 }
 #add-photo-wrap {
   height: 300px;
 }
 .h-88{
   height: 88px;
+  background-color: #2e2e2e;
 }
 .messages{
   background-color: #1E1E1E;
@@ -618,4 +619,5 @@ opacity: 0.8;
     width: 90px;
   }
 }
+
 
