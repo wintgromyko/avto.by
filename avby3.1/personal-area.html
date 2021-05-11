@@ -81,40 +81,6 @@
         </div>
     </header>
 
-    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-               <span>Продать автомобиль</span>
-            </div>
-            <div class="carousel-item">
-                <span>Мои лоты</span>
-            </div>
-            <div class="carousel-item">
-                <span>Архив аукционов</span>
-            </div>
-            <div class="carousel-item">
-                <span>Текущие аукционы </span>
-            </div>
-            <div class="carousel-item">
-                <span>Баланс</span>
-            </div>
-            <div class="carousel-item">
-                <span>Настройки</span>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div> -->
-
-
-
-
     <ul id="area-mob-nav" class="nav nav-tabs d-md-none">
         <li class="nav-item p-0">
             <a class="nav-link active" data-toggle="tab" href="#home">Продать автомобиль</a>
@@ -129,7 +95,7 @@
             <a class="nav-link" data-toggle="tab" href="#menu2">Текущие аукционы</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu2">Баланс</a>
+            <a class="nav-link" data-toggle="tab" href="#balance">Баланс</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#options">Настройки</a>
@@ -156,7 +122,7 @@
                             <a class="nav-link" data-toggle="tab" href="#menu2">Текущие аукционы</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#menu2">Баланс</a>
+                            <a class="nav-link" data-toggle="tab" href="#balance">Баланс</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#options">Настройки</a>
@@ -165,15 +131,15 @@
 
                     </ul>
                 </div>
-                <div id="area-wrap" class="col-12 col-md-9">
+                <div id="area-wrap" class="col-11 col-md-9 m-auto">
                     <div class="tab-content">
-                        <div id="home" class="container tab-pane active"><br>
+                        <div id="home" class="container tab-pane fade"><br>
                             <h3>HOME</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.</p>
                         </div>
 
-                        <div id="my-lots" class="container tab-pane fade"><br>
+                        <div id="my-lots" class="container tab-pane fade active"><br>
                             <div class="cart-body-item ">
                                 <img src="img/Rectangle-324.jpg" alt="">
                                 <div class="cart-boby-item-dec">
@@ -236,7 +202,100 @@
 
 
                         </div>
+                        <div id="balance" class="container tab-pane fade"><br>
 
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-md-6">
+                                    <div>
+                                        <div class="balance-title">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2" y="5" width="20" height="15" rx="2" stroke="#00AF68"
+                                                stroke-width="2" />
+                                            <path d="M1 10H23" stroke="#00AF68" stroke-width="2" />
+                                        </svg>
+                                        <span>Ваш баланс:</span>
+                                        </div>
+                                       
+                                        <div id="current-balance">
+                                            <span>17 732</span> <span>Br</span>
+                                        </div>
+                                        <span class="current-balance-us">≈ <span>6853</span>$</span>
+                                        <div class="mt-3"></div>
+                                        <div class="row align-items-center m-0 balance-title">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 3V21" stroke="#00AF68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3 12L21 12" stroke="#00AF68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg><span>Пополнить баланс</span>
+                                        </div>
+                                        <div class="summ mt-3">
+                                            <input class="area-form-input" placeholder="Сумма" name="summ">
+                                        </div>
+                                        <button id="btn-next add-summ" class="btn btn-success area-form-btn">пополнить
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div id="balane-list-wrap" class="col-12 col-md-5">
+
+                                    <div class="row justify-content-around">
+                                        <span class="balance-title">Пополнения</span> <span class="balance-title pr-4">Списания</span>
+                                    </div>
+                                    <div class="row justify-content-around mt-md-2">
+                                        <span>Сумма</span> <span>Время и дата</span>
+                                    </div>
+                                    <ul id="balane-list">
+                                        <li>
+                                            <span>
+                                                <span class="price-balance">1000</span> 
+                                                <span>Br</span>
+                                            </span>
+                                            <span class="date-balance">21.01.2021</span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <span class="price-balance">20000</span> 
+                                                <span>Br</span>
+                                            </span>
+                                            <span class="date-balance">14.01.2021</span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <span class="price-balance">150</span> 
+                                                <span>Br</span>
+                                            </span>
+                                            <span class="date-balance">05.01.2021</span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <span class="price-balance">20000</span> 
+                                                <span>Br</span>
+                                            </span>
+                                            <span class="date-balance">14.01.2021</span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <span class="price-balance">1000</span> 
+                                                <span>Br</span>
+                                            </span>
+                                            <span class="date-balance">21.01.2021</span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <span class="price-balance">20000</span> 
+                                                <span>Br</span>
+                                            </span>
+                                            <span class="date-balance">14.01.2021</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
                         <div id="options" class="container tab-pane fade"><br>
                             <div class="row my-order">
                                 <div class="col-6 col-md-2">
@@ -274,7 +333,7 @@
                                     <span class='msg2'>mail@mail.ru</span>
                                     <div class="text2" style="display: none;">
                                         <div class="email">
-                                            <input class="area-form-input" type="email" id="password-old"
+                                            <input class="area-form-input" type="email" 
                                                 placeholder="mail@mail.ru" name="Email">
 
                                         </div>
@@ -295,15 +354,15 @@
                                     <span class='msg3'>Фамилия Имя Отчество</span>
                                     <div class="text3" style="display: none;">
                                         <div class="fio">
-                                            <input class="area-form-input" type="email" id="password-old"
+                                            <input class="area-form-input"  
                                                 placeholder="Фамилия" name="family">
                                         </div>
                                         <div class="name-area">
-                                            <input class="area-form-input" type="email" id="password-old"
+                                            <input class="area-form-input"  
                                                 placeholder="Имя" name="family">
                                         </div>
                                         <div class="middle-name-area">
-                                            <input class="area-form-input" type="email" id="password-old"
+                                            <input class="area-form-input"  
                                                 placeholder="Отчество" name="middle-name">
                                         </div>
                                         <button id="btn-next" class="btn btn-success area-form-btn">Измениь ФИО
@@ -323,7 +382,7 @@
                                     <span class='msg4'>?????????</span>
                                     <div class="text4" style="display: none;">
                                         <div class="requisites">
-                                            <input class="area-form-input" type="email" id="password-old"
+                                            <input class="area-form-input" 
                                                 placeholder="??????????????" name="requisites">
                                         </div>
                                         <button id="btn-next" class="btn btn-success area-form-btn">Измениь реквезиты
@@ -335,86 +394,9 @@
                                 </div>
                             </div>
 
-
-
-
-                            <style>
-                                .password {
-                                    position: relative;
-                                }
-
-                                .password-control-old,
-                                .password-control-new {
-                                    /* position: absolute;
-	top: 11px;
-	right: 6px; */
-                                    display: inline-block;
-                                    width: 20px;
-                                    height: 20px;
-                                    background: url(img/view.svg) 0 0 no-repeat;
-                                }
-
-                                .password-control.view {
-                                    background: url(img/no-view.svg) 0 0 no-repeat;
-                                }
-                            </style>
-
-
-
-
-                            <script>
-
-                                jQuery(document).ready(function () {
-                                    $('.kplus').on('click', function () {
-                                        var theClass = $(this).attr('id');
-                                        $('.msg' + theClass).toggle();
-                                        if ($('.text' + theClass).css('display') == 'none') {
-                                            $('.text' + theClass).animate({ height: 'show' }, 500);
-                                            $('#' + theClass + '.kplus').addClass('viz');
-                                            $('#' + theClass + '.kplus span').replaceWith('<span>Отменить</span>');
-                                        } else {
-                                            $('.text' + theClass).animate({ height: 'hide' }, 100);
-                                            $('#' + theClass + '.kplus').removeClass('viz');
-                                            $('#' + theClass + '.kplus span').replaceWith('<span>Изменить</span>');
-                                        }
-                                    });
-                                });
-                                $('body').on('click', '.password-control-old', function () {
-                                    if ($('#password-old').attr('type') == 'password') {
-                                        $(this).addClass('view');
-                                        $('#password-old').attr('type', 'text');
-                                    } else {
-                                        $(this).removeClass('view');
-                                        $('#password-old').attr('type', 'password');
-                                    }
-                                    return false;
-                                });
-                                $('body').on('click', '.password-control-new', function () {
-                                    if ($('#password-new').attr('type') == 'password') {
-                                        $(this).addClass('view');
-                                        $('#password-new').attr('type', 'text');
-                                    } else {
-                                        $(this).removeClass('view');
-                                        $('#password-new').attr('type', 'password');
-                                    }
-                                    return false;
-                                });
-                            </script>
-
-
-
-
-
-
-
-
-
-
-
-
                         </div>
                     </div>
-                    <div class="hr"></div>
+                    <div class="mb-4"></div>
                 </div>
             </div>
         </div>
@@ -561,6 +543,54 @@
                 </svg>
             </a></div>
         </div>
+
+
+
+
+
+        <script>
+
+            jQuery(document).ready(function () {
+                $('.kplus').on('click', function () {
+                    var theClass = $(this).attr('id');
+                    $('.msg' + theClass).toggle();
+                    if ($('.text' + theClass).css('display') == 'none') {
+                        $('.text' + theClass).animate({ height: 'show' }, 500);
+                        $('#' + theClass + '.kplus').addClass('viz');
+                        $('#' + theClass + '.kplus span').replaceWith('<span>Отменить</span>');
+                    } else {
+                        $('.text' + theClass).animate({ height: 'hide' }, 100);
+                        $('#' + theClass + '.kplus').removeClass('viz');
+                        $('#' + theClass + '.kplus span').replaceWith('<span>Изменить</span>');
+                    }
+                });
+            });
+            $('body').on('click', '.password-control-old', function () {
+                if ($('#password-old').attr('type') == 'password') {
+                    $(this).addClass('view');
+                    $('#password-old').attr('type', 'text');
+                } else {
+                    $(this).removeClass('view');
+                    $('#password-old').attr('type', 'password');
+                }
+                return false;
+            });
+            $('body').on('click', '.password-control-new', function () {
+                if ($('#password-new').attr('type') == 'password') {
+                    $(this).addClass('view');
+                    $('#password-new').attr('type', 'text');
+                } else {
+                    $(this).removeClass('view');
+                    $('#password-new').attr('type', 'password');
+                }
+                return false;
+            });
+        </script>
+
+
+
+
+
         <!-- Option 2: Separate Popper and Bootstrap JS
 
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script> -->
