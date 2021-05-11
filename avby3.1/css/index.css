@@ -516,11 +516,44 @@ opacity: 0.5;
     .nav-item{
         padding-left: 20px;
     }
+    .summ > input {
+        width: 100%;
+    }
+    #btn-next\ add-summ {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 
   }
   .nav-menu {
     background-color: #1E1E1E;
     
+}
+.msg1, .msg2, .msg3, .msg4 {
+    font-size: 24px;
+line-height: 30px;
+
+}
+#current-balance {
+    font-weight: bold;
+    line-height: 60px;
+    font-size: 48px;
+}
+.current-balance-us {
+    font-family: Source Sans Pro;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-style: normal;
+}
+.balance-title {
+    font-family: Source Sans Pro;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    font-style: normal;
 }
 .dropdown-toggle::after {
     display: none;
@@ -579,6 +612,42 @@ a:hover {
     background-image: url(../img/prev.png);
     width: 42px;
     height: 42px;
+}
+
+.password-control-old, .password-control-new {
+	position: relative;
+	top: 5px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/view.svg) 0 0 no-repeat;
+}
+.password-control-old.view, .password-control-new.view {
+	background: url(../img/no-view.svg) 0 0 no-repeat;
+}
+#balane-list {
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 23px;
+}
+#balane-list-wrap > div > span:nth-child(1){
+    color: #00AF68;
+}
+#balane-list > li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 6px 0;
+    padding: 4px 0
+}
+#balane-list > li:nth-child(odd) {
+    background: #3F3F3F;
+    border-radius: 2px;
+}
+#balane-list > li >span:nth-child(1) > span {
+    color: #00AF68;
 }
 .carousel-indicators li {
     width: 12px!important;
