@@ -79,6 +79,7 @@
     </div>
   </header>
   <section class="add-auction container-fluid">
+    <form action="" method="post">
     <div class="container">
       <h2>Новое объявление</h2>
       <div class="messages col-12 col-xl-9">
@@ -99,7 +100,7 @@
           Объявления, не соответствующие правилам ресурса будут удалены модератором
         </p>
       </div>
-      <form action="" method="post">
+      
       <!-- style="display: none;" -->
       <div style="display: none;">
         <label><input type="radio" name="transport" value="a-car"> Radio Button 1</label>
@@ -609,17 +610,21 @@
       <div class="hr hr-hide" style="display: none;"></div>
       <div class="vin" style="display: none;">
         <span class="parameters-title">VIN Номер</span>
-        <div class="input">
+        <div class="set1">
+          <div class="input">
           <input type="text" class="form-control form-car-item-input" placeholder="Код из 17 символов">
         </div>
         <p class="vin-content">Не обязательно для транспорта старше 2019 года</p>
         <p class="vin-content">Но мы рекомендуме заполнить поле. Объявление с VIN-Номером
           привлекает внимание и повышает доверие к продавцу.</p>
       </div>
+        </div>
+        
       <div class="hr hr-hide" style="display: none;"></div>
       <div class="color-car" style="display: none;">
         <span class="parameters-title">Cостояние и цвет</span>
-        <div class="input">
+        <div class="set1">
+                  <div class="input">
           <input type="text" class="form-control form-car-item-input" list="condition" placeholder="Состояние">
           <datalist id="condition">
             <option value="Edge">
@@ -688,10 +693,12 @@
             </div>
           </div>
         </div>
+        </div>
+
         <div class="hr hr-hide" style="display: none;"></div>
         <div class="equipment" style="display: none;">
           <span class="parameters-title">Комплектация</span>
-          <div class="row">
+          <div class="set1">          <div class="row">
             <div class="col-12 col-md-6 col-lg-3">
               <span class="setting-hide-one-item-title">Системы безопасности</span>
               <div class="checkbox mt-2">
@@ -745,15 +752,6 @@
                 <input class="custom-checkbox" type="checkbox" id="dead-zones" name="dead-zones" value="dead-zones">
                 <label class="check-title" for="dead-zones">Контроль мертвых зон
                   на зеркалах</label>
-              </div>
-              <span class="setting-hide-one-item-title">Интерьер</span>
-              <div class="setting-hide-one-item-title">
-                <input class="custom-checkbox" type="checkbox" id="roof" name="roof" value="roof">
-                <label class="check-title" for="roof">Панорамная крыша</label>
-              </div>
-              <div class="checkbox">
-                <input class="custom-checkbox" type="checkbox" id="Luke" name="Luke" value="Luke">
-                <label class="check-title" for="Luke">Люк</label>
               </div>
 
             </div>
@@ -898,8 +896,10 @@
               </div>
             </div>
 
-          </div>
+          </div></div>
+
         </div>
+      </div>
       </div>
       <div class="add-foto container p-0" style="display: none;">
         <div class="filter m-0">
@@ -911,7 +911,7 @@
                 рекламу. Иначе модератор отклонит ваше объявление</p>
               <p>JPG или PNG размером до 20МБ.</p>
               <div class="add-foto-btn">
-                <button id='btn-add-foto' class="btn btn-success mb-2">Добавить фото</button>
+                <button id='btn-add-foto' type="button"  class="btn btn-success mb-2">Добавить фото</button>
                 <span>До 30 фото</span>
               </div>
 
@@ -994,6 +994,7 @@
 
         </div>
       </div>
+      
     </form>
       
 

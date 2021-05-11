@@ -21,7 +21,9 @@ $(document).ready(function () {
         }
         }
         });
-        
+        $('#btn-add-foto').click(function (e) {
+            $('.add-foto-right input').click();
+        });
     /* Установите ширину боковой навигации на 0 */
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
