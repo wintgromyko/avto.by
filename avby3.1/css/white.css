@@ -63,3 +63,6 @@ footer{
     border: 1px solid #EDF1F2!important;
     box-sizing: border-box;
 }
+#singl-wrap-bg {
+    background: unset!important;
+}
