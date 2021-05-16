@@ -1283,6 +1283,9 @@ div[data-target="#collapseOne"] svg {
 #my-lots > .cart-body-item  {
     padding: 0!important;
 }
+#archiv > .cart-body-item  {
+    padding: 0!important;
+}
 #my-lots > .hr  {
     margin-top: 14px!important;
 }
@@ -1411,3 +1414,145 @@ div[data-target="#collapseOne"] svg {
 #myCarousel .carousel-indicators > li.active img {
     opacity: 0.7;
 }
+.button-submit{
+    display: flex;
+    align-items: center;
+}
+.checkbox-btn{
+border: unset;
+  background: unset;
+  color: #fff;
+}
+.check{
+    display: flex;
+}
+.button-submit input{
+
+}
+.check span{
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 14px;
+color: #FFFFFF;
+} 
+
+.checkbox-btn {
+  display: inline-block;
+  margin: 0 5px 0 0;
+  user-select: none;
+  position: relative;
+}
+.checkbox-btn input[type=checkbox] {
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+.checkbox-btn span {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 15px;
+  line-height: 30px;
+background: #00AF68;
+border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+/* Checked */
+.checkbox-btn input[type=checkbox]:checked + span {
+  background: #3F3F3F;
+}
+
+/* Focus */
+.focused span {
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Hover */
+.checkbox-btn:hover {
+  color: #666;
+}
+
+/* Active */
+.checkbox-btn input[type=checkbox]:active:not(:disabled) + span {
+background: #3F3F3F;
+}
+
+/* Disabled */
+.checkbox-btn input[type=checkbox]:disabled + span {
+background: #3F3F3F;
+  cursor: default;
+}
+.checkbox-btn input[type=checkbox]:checked:disabled + span {
+  background: #3F3F3F;
+}
+.button-submit input{
+    background: unset;
+    border: unset;
+    color: #fff;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+}
+.cart-head input{
+    padding: 0;
+    margin: 0;
+}
+.no-height {
+    height: 0px!important;
+}
+.hei-10 {
+    height: 20px!important;
+}
+.btn-top {
+    margin-top: -5px;
+}
+.transform-desk {
+    transform: translateX(-84px);
+}
+/* .transform-desk {
+        
+    display: none;
+} */
+
+
+@media screen and (min-width: 1200px) {
+
+    .transform-desk {
+        display: flex;
+        
+    }
+    .check-mob{
+        display: none;
+    }
+    .mob-icon-sinhron {
+        align-items: flex-start;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+
+    .transform-desk, .hei-10 {
+        display: none;
+        
+    }
+    .mob-icon-sinhron {
+        align-items: flex-end;
+        padding-bottom: 5px;
+    }
+    .check-mob{
+        display: flex;
+        position: absolute;
+        right: 25px;
+        top: 74px;
+    }
+  }
+  @media screen and (max-width: 768px){
+    #my-lots{
+        zoom: 80%;
+    }
+  }

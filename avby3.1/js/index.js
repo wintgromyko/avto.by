@@ -11,7 +11,51 @@ $(document).ready(function () {
         }
 
     }
-    
+    $('.checkbox-btn').click(function(e){
+        if ($('.checkbox-btn input').is(':checked')){
+     $('.checkbox-btn span').text('ЗАКРЫТ');
+     }else{
+     $('.checkbox-btn span').text('ОТКРЫТ');
+     }});
+     $('.kplus').on('click', function () {
+        var theClass = $(this).attr('id');
+        $('.msg' + theClass).toggle();
+        if ($('.text' + theClass).css('display') == 'none') {
+            $('.text' + theClass).animate({ height: 'show' }, 500);
+            $('#' + theClass + '.kplus').addClass('viz');
+            $('#' + theClass + '.kplus span').replaceWith('<span>Отменить</span>');
+        } else {
+            $('.text' + theClass).animate({ height: 'hide' }, 100);
+            $('#' + theClass + '.kplus').removeClass('viz');
+            $('#' + theClass + '.kplus span').replaceWith('<span>Изменить</span>');
+        }
+    });
+
+    $('body').on('click', '.password-control-old', function () {
+        if ($('#password-old').attr('type') == 'password') {
+            $(this).addClass('view');
+            $('#password-old').attr('type', 'text');
+        } else {
+            $(this).removeClass('view');
+            $('#password-old').attr('type', 'password');
+        }
+        return false;
+    });
+    $('body').on('click', '.password-control-new', function () {
+        if ($('#password-new').attr('type') == 'password') {
+            $(this).addClass('view');
+            $('#password-new').attr('type', 'text');
+        } else {
+            $(this).removeClass('view');
+            $('#password-new').attr('type', 'password');
+        }
+        return false;
+    });
+
+    $('.checkbox-btn input').focusout(function(){
+        $(this).parent().removeClass('focused');
+    });
+
     $(document).scroll(function(){
         if ($(document).width() <= 768 && $('.settings').html() !=undefined) {
         if($(document).scrollTop() >= $('.settings').offset().top-$(window).height() || $(document).scrollTop() <=1100){
@@ -310,4 +354,18 @@ $(document).ready(function () {
             });
         });
     });
-})
+});
+// $(window).keyup(function(e){
+//     var target = $('.checkbox-btn input:focus');
+//     if (e.keyCode == 9 && $(target).length){
+//         $(target).parent().addClass('focused');
+//     }
+// });
+//  $('.checkbox-btn').click(function(){
+//      if ($('.checkbox-btn input').is(':checked')){
+//   $('.checkbox-btn span').text('ЗАКРЫТ');
+//   }else{
+//   $('.checkbox-btn span').text('ОТКРЫТ');
+//   }
+//  });
+
