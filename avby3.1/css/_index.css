@@ -1132,3 +1132,12 @@ div[data-target="#collapseOne"] svg {
 #myCarousel .carousel-indicators > li.active img {
     opacity: 0.7;
 }
+#btn-down {
+    font-weight: 600;
+    line-height: 15px;
+    color: #282828;
+    font-size: 12px;
+}
+div {
+    display: none;
+}

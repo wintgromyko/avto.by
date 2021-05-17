@@ -1388,6 +1388,38 @@ div[data-target="#collapseOne"] svg {
 }
 
 
+#btn-down {
+    font-weight: 600;
+    line-height: 15px;
+    color: #282828;
+    font-size: 12px;
+    padding-left: 5px;
+}
+#maps-selectd > div > ul {
+    height: 169px;
+    overflow: overlay;
+    margin-left: 0; 
+    padding-left: 0;
+}
+
+#maps-selectd > div > ul::-webkit-scrollbar { width: 3px; height: 3px;}
+#maps-selectd > div > ul::-webkit-scrollbar-track {  background-color: #999;}
+#maps-selectd > div > ul::-webkit-scrollbar-track-piece { background-color: #EDF1F2;}
+#maps-selectd > div > ul::-webkit-scrollbar-thumb { height: 30px; background-color: #00AF68;;; border-radius: 3px;}
+#maps-selectd > div > ul::-webkit-scrollbar-corner { background-color: #999;}}
+#maps-selectd > div > ul::-webkit-resizer { background-color: #00AF68;;}
+
+#maps-selectd > div > ul > li {
+    list-style-type: none;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #282828;
+    opacity: 0.8;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
 
 
 
