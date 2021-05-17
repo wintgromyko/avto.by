@@ -640,13 +640,25 @@ opacity: 0.8;
 
 @media screen and (min-width: 1200px){
   input[name = 'Engine-volume-max']{
-    border-radius: 0 8px;
+    border-radius: 0 8px 0 0;
   } 
 }
 @media screen and (max-width: 1200px){
   select[name = 'currency']{
     border-radius: 0 8px 0 0;
   } 
+}
+@media screen and (max-width: 768px){
+  select[name = 'currency']{
+    border-radius: 0 0 0 0;
+  } 
+  input[name = 'year-max']{
+    border-radius: 0 8px 0 0;
+  }
+  #\#auc-wrap-parametr-two\  > div.input-group.form-car-item.col-12.col-md-6.col-xl-4.pr-md-0 > div:nth-child(1) > span{
+    border-radius: 8px 0 0 0;
+  }
+
 }
 
 
