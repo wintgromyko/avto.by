@@ -627,6 +627,13 @@ opacity: 0.8;
 #mySidenav input:focus , .add-auction input:focus ,.add-auction textarea:focus , .add-auction select:focus{
   color: #fff;
 }
+.kplus span{
+  cursor:pointer;
+}
+#mySidenav .password{
+  display: flex;
+    align-items: baseline;
+}
 
 
 
