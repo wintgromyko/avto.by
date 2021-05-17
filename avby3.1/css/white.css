@@ -77,7 +77,7 @@ section.auction, .cart-list,.add-auction,.h-88{
     background-color: #fff;
 
 }
- section.auction.container-fluid > div > div.auction-top-nav > nav > div > ul > li > a > span,#headingOne a,.min-title-auk,.cart-header-title,.dropdown-toggle{
+ section.auction.container-fluid > div > div.auction-top-nav > nav > div > ul > li > a > span,#headingOne a,.min-title-auk,.cart-header-title,.dropdown-toggle ,.add-auction h3{
     color: #282828;
 }
 .form-car{
@@ -91,4 +91,64 @@ span.name-auto:hover{
 }
 header a:hover {
     color: rgb(255, 255, 255);
+}
+#headingOne path{
+    fill: #000;
+}
+.settings-param{
+    background-color: unset!important;
+   
+}
+
+.form-car-item input{
+    opacity: 1;
+}
+.form-car-item span{
+    opacity: 1;
+}
+.form-car-item select{
+    opacity: 1;
+}
+#collapseOne a.nav-link{
+    color: #282828!important;
+}
+
+.mailer input {
+border: solid 1px #dee2e6;
+background-color: unset!important;
+}
+@media screen and (max-width: 768px){
+    #auc-wrap-parametr-three > div.setting-hide > div.setting-hide-one > div > div > div > div> label{
+        color: #282828!important;
+    }
+    .settings path{
+        fill: #282828!important;
+        opacity: 1;
+    }
+    #auc-wrap-parametr-three > div.setting-hide > div.settings > div.settings-params.row.m-0 > span.settings-param.btn-set > svg path{
+        fill: #282828!important;
+        stroke:#282828!important;
+    }
+    #auc-wrap-parametr-three > div.setting-hide > div.settings > div.settings-params.row.m-0 > span.settings-param.btn-set > svg circle{
+        fill: #282828!important;
+        stroke:#282828!important;
+    }
+    .settings span{
+        color: #282828!important;
+    }
+}
+.pagination a{
+    color: #282828!important;
+}
+.pagination path{
+    stroke: #282828!important;
+}
+.pagination path:hover{
+    stroke: #00AF68!important;
+  }
+  .pagination a:hover{
+    color: #00AF68!important;
+}
+.form-car-item input::placeholder{
+    background: unset;
 }
