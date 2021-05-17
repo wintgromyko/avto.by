@@ -638,9 +638,14 @@ opacity: 0.8;
   stroke: #00AF68!important;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1200px){
   input[name = 'Engine-volume-max']{
     border-radius: 0 8px;
+  } 
+}
+@media screen and (max-width: 1200px){
+  select[name = 'currency']{
+    border-radius: 0 8px 0 0;
   } 
 }
 
