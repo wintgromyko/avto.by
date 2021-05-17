@@ -151,12 +151,7 @@ $(document).ready(function () {
         $('.trailers').show();
     });
 
-    $(".page-link").hover(function () {
 
-        $(this).children().children().attr('stroke', '#00AF68');
-    }, function () {
-        $(this).children().children().attr('stroke', '#fff');
-    });
     $('.btn-set').click(function () {
         $('.set-wrap').toggle();
     });
