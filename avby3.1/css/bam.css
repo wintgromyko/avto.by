@@ -638,6 +638,12 @@ opacity: 0.8;
   stroke: #00AF68!important;
 }
 
+@media screen and (min-width: 768px){
+  input[name = 'Engine-volume-max']{
+    border-radius: 0 8px;
+  } 
+}
+
 
 
 
