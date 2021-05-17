@@ -620,6 +620,13 @@ opacity: 0.8;
     width: 90px;
   }
 }
+#mySidenav input , .add-auction input ,.add-auction textarea , .add-auction select{
+  background-color: #3F3F3F!important;
+  border-color:unset ;
+}
+#mySidenav input:focus , .add-auction input:focus ,.add-auction textarea:focus , .add-auction select:focus{
+  color: #fff;
+}
 
 
 

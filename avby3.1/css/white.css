@@ -58,11 +58,37 @@ footer{
 .footer-title-dark , .footer-dec-dark ,.footer-tel-dark a ,.footer-nav-item-title , .footer-links{
     color: #282828;
 }
-.form-control {
+.form-buy .form-control {
     background: #fff!important;
     border: 1px solid #EDF1F2!important;
     box-sizing: border-box;
 }
 #singl-wrap-bg {
     background: unset!important;
+}
+
+/* span, h2 ,h3 ,h4, p {
+    color: #282828;
+} */
+h2{
+    color: #282828!important;
+}
+section.auction, .cart-list,.add-auction,.h-88{
+    background-color: #fff;
+
+}
+ section.auction.container-fluid > div > div.auction-top-nav > nav > div > ul > li > a > span,#headingOne a,.min-title-auk,.cart-header-title,.dropdown-toggle{
+    color: #282828;
+}
+.form-car{
+    background-color: unset;
+}
+span.name-auto:hover{
+    color: #00AF68!important;
+}
+.auction a:hover{
+    color: #00AF68!important;
+}
+header a:hover {
+    color: rgb(255, 255, 255);
 }
