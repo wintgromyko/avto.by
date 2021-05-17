@@ -1406,7 +1406,7 @@ div[data-target="#collapseOne"] svg {
 #maps-selectd > div > ul::-webkit-scrollbar-track {  background-color: #999;}
 #maps-selectd > div > ul::-webkit-scrollbar-track-piece { background-color: #EDF1F2;}
 #maps-selectd > div > ul::-webkit-scrollbar-thumb { height: 30px; background-color: #00AF68;;; border-radius: 3px;}
-#maps-selectd > div > ul::-webkit-scrollbar-corner { background-color: #999;}}
+#maps-selectd > div > ul::-webkit-scrollbar-corner { background-color: #999;}
 #maps-selectd > div > ul::-webkit-resizer { background-color: #00AF68;;}
 
 #maps-selectd > div > ul > li {
